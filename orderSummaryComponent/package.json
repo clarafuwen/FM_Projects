@@ -1,0 +1,24 @@
+{
+  "name": "ordersummarycomponent",
+  "version": "1.0.0",
+  "description": "frontedn mentor challenge -- order summary component",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarafuwen/FM_Projects.git"
+  },
+  "author": "Clara Fu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarafuwen/FM_Projects/issues"
+  },
+  "homepage": "https://github.com/clarafuwen/FM_Projects#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
