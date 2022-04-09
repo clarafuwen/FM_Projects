@@ -18,12 +18,12 @@ body {
     background-image: url('images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
 .container {
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,26 +36,17 @@ body {
 
     border-radius: 20px;
 
-    justify-content: center;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-
     /* border: 1px solid red; */
 }
 
 .header {
     width: 328px;
-    height: auto;
     border: none;
-    /* background-color: transparent; */
-    /* background-color: white; */
 
     /* border: 1px solid black; */
 }
 
 .header img {
-    /* width: 315px; */
-    /* height: auto; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -63,26 +54,24 @@ body {
 }
 
 .content {
-    height: auto;
+    height: 398px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
     /* border: 1px solid black; */
 }
 
-.content h3 {
-    margin-top: 2vh;
+.content h2 {
+    margin-top: 3vh;
     font-weight: 900;
     width: auto;
-    margin-top: 4vh;
     text-align: center;
     background-color: #ffffff;
     color: var(--Dark-blue);
-    /* margin-top: 75px; */
-
     /* border: 1px solid green; */
 }
 
@@ -92,7 +81,7 @@ body {
     height: auto;
     justify-content: center;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 2vh;
     color: var(--Desaturated-blue);
     background-color: #ffffff;
 
@@ -101,7 +90,7 @@ body {
 }
 
 .rate_info {
-    margin-top: 4vh;
+    margin-top: 3vh;
     margin-bottom: 2.5vh;
     width: 275px;
     height: 80px;
@@ -109,9 +98,7 @@ body {
     background-color: var(--Very-pale-blue);
 
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
-    /* justify-content: space-around; */
 
 }
 
@@ -119,7 +106,6 @@ body {
     width: 50px;
     height: 50px;
     margin-left: 5%;
-    /* background-color: transparent; */
 
     /* border: 1px solid red; */
 
@@ -128,11 +114,6 @@ body {
 .rate_plan {
     margin-left: 8%;
     margin-right: 12%;
-    /* width: 220px; */
-    /* background-color: transparent; */
-    /* border: 1px solid red; */
-
-
 
 }
 
@@ -163,7 +144,8 @@ body {
     color: var(--Bright-blue);
 }
 
-.rate_info a:active {
+.rate_info a:active,
+.rate_info a:hover {
     color: var(--Purple);
     text-decoration: none;
 }
@@ -173,13 +155,15 @@ button {
     height: 50px;
     width: 275px;
     border-radius: 10px;
-    margin-top: 1.5vh;
+    margin-top: 1vh;
     font-size: 15px;
+    font-weight: 700;
     border: none;
     box-shadow: 1px 10px 20px hsl(246, 70%, 83%);
 }
 
-button:active {
+button:active,
+button:hover {
     cursor: pointer;
 }
 
@@ -188,15 +172,11 @@ button:active {
 }
 
 
-.proceed:active {
+.proceed:active,
+.proceed:hover {
     background-color: var(--Purple);
 }
 
-/* button .proceed a {
-    text-decoration: none;
-    color: var(--Bright-blue);
-    background-color: var(--Bright-blue);
-} */
 
 .proceed a:link,
 .proceed a:visited {
@@ -204,12 +184,11 @@ button:active {
     text-decoration: none;
 }
 
-.proceed a:active {
+.proceed a:active,
+.proceed a:hover {
     text-decoration: none;
-    /* color: var(--Desaturated-blue); */
     background-color: var(--Purple);
     color: var(--Very-pale-blue);
-    /* cursor: pointer; */
 
 }
 
@@ -220,7 +199,8 @@ button:active {
     font-size: 15px;
 }
 
-.cancel:active {
+.cancel:active,
+.cancel:hover {
     cursor: pointer;
 }
 
@@ -230,16 +210,23 @@ button:active {
     text-decoration: none;
 }
 
-.cancel a:active {
+.cancel a:active,
+.cancel a:hover {
     text-decoration: none;
     background-color: transparent;
     color: var(--Dark-blue);
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1440px) {
+.attribution {
+    position: absolute;
+    bottom: 8vh;
+    /* border: 1px solid black; */
+}
+
+
+@media only screen and (min-width: 767px) {
     body {
         background-image: url('images/pattern-background-desktop.svg');
-        /* align-items: center; */
     }
 
     .container {
@@ -249,6 +236,10 @@ button:active {
 
     .header {
         width: 405px;
+    }
+
+    .content {
+        height: 420px;
     }
 
     .content p {
