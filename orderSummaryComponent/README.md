@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](https://github.com/clarafuwen/FM_Projects/blob/a5fdaa1deba48c75b937c3dbe6972192d97ffe34/orderSummaryComponent/ScreenShot_desktop.png)
+![Desktop Version Screenshot](https://github.com/clarafuwen/FM_Projects/blob/a5fdaa1deba48c75b937c3dbe6972192d97ffe34/orderSummaryComponent/ScreenShot_desktop.png)
 
 
 
