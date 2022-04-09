@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-!(orderSummaryComponent/ScreenShot_desktop.png)
+![alt text](FM_Projects/orderSummaryComponent/ScreenShot_desktop.png)
 
 
 
