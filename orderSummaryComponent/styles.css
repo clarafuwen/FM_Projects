@@ -20,23 +20,21 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* border: 2px solid red; */
 }
 
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
     height: 566px;
     width: 328px;
     background-color: #ffffff;
-
     border-radius: 20px;
 
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
 }
 
 .header {
@@ -72,6 +70,7 @@ body {
     text-align: center;
     background-color: #ffffff;
     color: var(--Dark-blue);
+
     /* border: 1px solid green; */
 }
 
@@ -84,7 +83,6 @@ body {
     margin-top: 2vh;
     color: var(--Desaturated-blue);
     background-color: #ffffff;
-
 
     /* border: 1px solid blue; */
 }
@@ -156,8 +154,7 @@ body {
     justify-content: center;
     border-radius: 10px;
     margin-top: 1vh;
-    /* font-size: 15px; */
-    font-weight: 700;
+    margin-bottom: 1vh;
     border: none;
     box-shadow: 1px 10px 20px hsl(246, 70%, 83%);
     /* border: 1px solid red; */
@@ -197,7 +194,7 @@ body {
     background-color: transparent;
     border: none;
     box-shadow: none;
-    font-size: 15px;
+
 }
 
 .cancel:active,
@@ -209,6 +206,8 @@ body {
 .cancel a:visited {
     color: var(--Desaturated-blue);
     text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .cancel a:active,
@@ -218,16 +217,11 @@ body {
     color: var(--Dark-blue);
 }
 
-footer {
-    position: absolute;
-    bottom: 8vh;
-    /* border: 1px solid black; */
-}
-
 
 @media only screen and (min-width: 767px) {
     body {
         background-image: url('images/pattern-background-desktop.svg');
+
     }
 
     .container {
