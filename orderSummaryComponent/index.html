@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>Frontend Mentor | Order summary card</title>
+
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -24,12 +24,13 @@
             color: hsl(228, 45%, 44%);
         }
     </style>
+    <title>Frontend Mentor | Order summary card</title>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <img src="images/illustration-hero.svg" atl='illustration-hero' width="100%" />
+            <img atl='illustration-hero' src="images/illustration-hero.svg" width="100%" />
         </div>
         <div class="content">
             <h2>Order Summary</h2>
@@ -37,13 +38,13 @@
             <div class='rate_info'>
                 <img src="images/icon-music.svg" alt="music" width="100%" />
                 <div class="rate_plan">
-                    <h4>Annual Plan</h>
-                        <p>$59.99/year</p>
+                    <p class="plan_type">Annual Plan<br></p>
+                    <p>$59.99/year</p>
                 </div>
                 <p><a href=''>Change</a></p>
             </div>
-            <button class="proceed"><a href=''>Proceed to Payment</a></button>
-            <button class="cancel"><a href=''>Cancel Order</a></button>
+            <div class="button proceed"><a href=''>Proceed to Payment</a></div>
+            <div class="button cancel"><a href=''>Cancel Order</a></div>
         </div>
     </div>
     <div class="attribution">

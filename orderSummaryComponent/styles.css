@@ -92,7 +92,7 @@ body {
 .rate_info {
     margin-top: 3vh;
     margin-bottom: 2.5vh;
-    width: 275px;
+    width: 278px;
     height: 80px;
     border-radius: 12px;
     background-color: var(--Very-pale-blue);
@@ -106,27 +106,23 @@ body {
     width: 50px;
     height: 50px;
     margin-left: 5%;
-
     /* border: 1px solid red; */
-
 }
 
 .rate_plan {
-    margin-left: 8%;
-    margin-right: 12%;
+    margin-left: 6%;
+    margin-right: 9%;
+    /* border: 1px solid green; */
 
 }
 
-.rate_plan h4 {
-    display: contents;
-    width: fit-content;
+.rate_plan .plan_type {
+    display: block;
+    width: auto;
+    font-weight: 900;
     color: var(--Dark-blue);
-}
+    /* border: 1px solid red; */
 
-.rate_plan p {
-    display: contents;
-    width: fit-content;
-    text-align: left;
 }
 
 .rate_info p {
@@ -150,20 +146,25 @@ body {
     text-decoration: none;
 }
 
-button {
+.button {
     background-color: var(--Bright-blue);
     height: 50px;
-    width: 275px;
+    width: 278px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     margin-top: 1vh;
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 700;
     border: none;
     box-shadow: 1px 10px 20px hsl(246, 70%, 83%);
+    /* border: 1px solid red; */
 }
 
-button:active,
-button:hover {
+.button:active,
+.button:hover {
     cursor: pointer;
 }
 
@@ -259,7 +260,7 @@ button:hover {
         margin: 0 auto;
     }
 
-    button {
+    .button {
         height: 45px;
         width: 320px;
     }
