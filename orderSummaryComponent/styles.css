@@ -28,7 +28,7 @@ body {
 }
 
 
-.container {
+main {
     height: 566px;
     width: 328px;
     background-color: #ffffff;
@@ -224,7 +224,7 @@ body {
 
     }
 
-    .container {
+    main {
         width: 405px;
         height: 630px;
     }
