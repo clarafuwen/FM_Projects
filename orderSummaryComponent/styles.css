@@ -47,6 +47,7 @@ main {
 .header img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 100%;
 
     /* border: 1px solid black; */
 }
@@ -226,7 +227,7 @@ main {
 
     main {
         width: 405px;
-        height: 630px;
+        height: 628px;
     }
 
     .header {
