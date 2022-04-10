@@ -218,6 +218,14 @@ main {
     color: var(--Dark-blue);
 }
 
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
 
 @media only screen and (min-width: 767px) {
     body {
