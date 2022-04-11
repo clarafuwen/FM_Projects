@@ -24,7 +24,7 @@ body {
     width: 375px;
     height: 1500px;
     background-color: var(--Very-light-gray);
-    /* border: 2px solid red; */
+
 
 }
 
@@ -143,7 +143,6 @@ button:active {
         width: 307;
         height: 500px;
         display: block;
-        border-radius: none;
 
     }
 
