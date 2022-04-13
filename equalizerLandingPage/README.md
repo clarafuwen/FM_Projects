@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_mobile](./screenshot.jpg)
+![screenshot_mobile](https://github.com/clarafuwen/FM_Projects/blob/406d744ed5d6b6454c2cfa316493bf3e10c5bc0d/equalizerLandingPage/screencapture_desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/clarafuwen/FM_Projects/tree/main/equalizerLandingPage
+- Live Site URL: https://monumental-sable-3b679e.netlify.app/
 
 ## My process
 
@@ -46,9 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-The way I did this project was basically positioning elements relative or absolute to their parent elements. It was a fun practice of mixing static box and flexbox. Definetely learnt a lot about about this very basic thus powerful property. 
+The way I did this project was basically positioning elements relative or absolute to their parent elements. It was a fun experience of mixing static box and flexbox. Definitely learnt a lot about 'position' property. 
 
 
 ## Author
