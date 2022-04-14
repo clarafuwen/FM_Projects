@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot_mobile](https://github.com/clarafuwen/FM_Projects/blob/8489856fc032f8d7f97e99874dfe02180328e679/columnPreviewCardComponent/screencapture_mobile.png)
+![Screenshot_mobile](https://github.com/clarafuwen/FM_Projects/blob/d8b9b7069c0fc547b85315e2110b9c9adbc65e93/columnPreviewCardComponent/screencapture_mobile.png)
 
 
 ### Links
