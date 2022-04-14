@@ -21,16 +21,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 375px;
-    height: 1500px;
     background-color: var(--Very-light-gray);
-
-
 }
 
 .panel-frame {
     width: 327px;
     height: 1326px;
+
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
@@ -83,13 +81,40 @@ button {
     margin-top: 25px;
 
     background-color: var(--Very-light-gray);
-    color: var(--Bright-orange);
+
 
     border: none;
     border-radius: 25px;
 
     line-height: 25px;
     font-size: 15px;
+}
+
+
+.panel-sedan {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--Bright-orange);
+}
+
+.panel-sedan button {
+    color: var(--Bright-orange);
+}
+
+
+
+.panel-suv {
+    background-color: var(--Dark-cyan);
+}
+
+.panel-suv button {
+    color: var(--Dark-cyan);
+}
+
+.panel-luxury {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--Very-dark-cyan);
 }
 
 button:hover,
@@ -99,22 +124,6 @@ button:active {
     border: 2px solid var(--Very-light-gray);
     cursor: pointer;
 
-}
-
-.panel-sedan {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: var(--Bright-orange);
-}
-
-.panel-suv {
-    background-color: var(--Dark-cyan);
-}
-
-.panel-luxury {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-color: var(--Very-dark-cyan);
 }
 
 .attribution {
@@ -127,10 +136,10 @@ button:active {
 }
 
 @media only screen and (min-width: 450px) {
-    body {
+    /* body {
         width: 1440px;
         height: 842px;
-    }
+    } */
 
     .panel-frame {
         width: 920px;
@@ -142,8 +151,6 @@ button:active {
     .panel-item {
         width: 307;
         height: 500px;
-        display: block;
-
     }
 
     button {
