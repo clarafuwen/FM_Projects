@@ -32,6 +32,8 @@ body {
     width: 327px;
     height: 1326px;
 
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: center;
