@@ -34,12 +34,12 @@ body {
     flex-direction: column;
     align-items: center;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
 }
 
 main {
-    /* margin: 71 auto; */
+    margin-bottom: 7.1rem;
 
     width: 32.7rem;
     margin-top: 7.1rem;
@@ -198,11 +198,16 @@ p {
 
 @media only screen and (min-width: 501px) {
     body {
+
+        margin: 0 auto;
         width: 144rem;
         height: 90rem;
     }
 
     main {
+
+        margin: 0 auto;
+
         width: 111rem;
         height: 57.2rem;
 
