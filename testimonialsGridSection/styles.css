@@ -142,7 +142,10 @@ p {
 }
 
 .grid-item1 img {
-    border: 2px solid #A775F1;
+    height: 3.2rem;
+    width: 3.2rem;
+
+    border: .2rem solid #A775F1;
 }
 
 .grid-item1 .subject {
@@ -176,7 +179,9 @@ p {
 }
 
 .grid-item4 img {
-    border: 2px solid #733FC8;
+    height: 3.2rem;
+    width: 3.2rem;
+    border: .2rem solid #733FC8;
 }
 
 .grid-item5 {
