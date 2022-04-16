@@ -22,13 +22,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot_desktop](https://github.com/clarafuwen/FM_Projects/blob/abedfea1c29218c1213b2a610ba88d93e77b77a1/testimonialsGridSection/screencapture_desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/clarafuwen/FM_Projects/tree/main/testimonialsGridSection)
+- Live Site URL: [Add live site URL here](https://deft-manatee-041a20.netlify.app/)
 
 ## My process
 
@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Clara Wen](https://github.com/clarafuwen/FM_Projects)
+- Frontend Mentor - [@clarafuwen](https://www.frontendmentor.io/profile/clarafuwen)
 
