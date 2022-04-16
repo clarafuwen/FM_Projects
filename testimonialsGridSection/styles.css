@@ -102,7 +102,7 @@ img {
     width: 26.3rem;
     height: auto;
 
-    margin-top: 1.7rem;
+    margin-top: 1.8rem;
     margin-left: 3.2rem;
 
 }
@@ -229,6 +229,8 @@ p {
     .grid-item1 .subject {
         width: 47.6rem;
         height: 7.2rem;
+
+        margin-top: 1.6rem;
     }
 
     .grid-item1 p {
@@ -270,6 +272,8 @@ p {
     .grid-item4 .subject {
         width: 47.6rem;
         height: 7.2rem;
+
+        margin-top: 1.6rem;
     }
 
     .grid-item4 p {
