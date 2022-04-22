@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_desktop](./screenshot.jpg)
+![screenshot_desktop](https://github.com/clarafuwen/FM_Projects/blob/732378d870cb083fbf712c2047d73f75d6aa39e5/loopStudiosLandingPage/screencapture_desktop.png)
 
 
 ### Links
