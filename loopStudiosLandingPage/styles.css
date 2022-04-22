@@ -1,0 +1,790 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 37.5rem;
+    height: 321.7rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* border: 1px solid red; */
+}
+
+ol,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 37.5rem;
+    height: 65rem;
+
+    background-image: url('images/mobile/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Alata',
+        sans-serif;
+}
+
+.logo {
+    display: block;
+    width: 14.4rem;
+    height: 2.4rem;
+
+    position: absolute;
+    left: 2.4rem;
+    top: 4rem;
+}
+
+#header_content {
+
+    width: 32.7rem;
+    height: 19.6rem;
+
+    position: absolute;
+    left: 2.4rem;
+    top: 22.7rem;
+
+    font-family: 'Josefin Sans',
+        sans-serif;
+
+    color: var(--White);
+
+    font-size: 4rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    border: .2rem solid var(--White);
+
+    padding: 2.6rem 2.4rem 2.4rem 2.4rem;
+
+}
+
+/* to hide mobile menu when not clicked */
+nav {
+    display: none;
+}
+
+
+/* mobile menu */
+.menu {
+    width: 37.5rem;
+    height: 66.7rem;
+    background: black;
+}
+
+.menu ol {
+
+    width: 12.9rem;
+    height: 22.1;
+    position: absolute;
+    top: 22.3rem;
+    left: 2.4rem;
+
+    font-family: 'Josefin Sans',
+        sans-serif;
+    ;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+li a {
+    display: block;
+    color: var(--White);
+    text-decoration: none;
+    /* position: relative; */
+}
+
+.menu a {
+    margin-bottom: 2.4rem;
+}
+
+/* hamburger icon and close icon */
+.icons {
+    width: 2.4rem;
+    height: 1.6rem;
+
+    position: absolute;
+    left: 32.7rem;
+    top: 4.4rem;
+
+    cursor: pointer;
+}
+
+
+/* to toggle menu icons, nav, and header_content */
+.open {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+main {
+    display: block;
+    font-family: 'Josefin Sans',
+        sans-serif;
+
+    position: absolute;
+    top: 74.6rem;
+
+    /* border: 1px solid black; */
+}
+
+.introduction {
+
+    width: 32.7rem;
+    height: 52.7rem;
+
+    background-image: url('images/mobile/image-interactive.jpg');
+    background-repeat: no-repeat;
+    background-size: 32.7rem 22.4rem;
+
+    display: flex;
+    justify-content: center;
+
+    /* border: 1px solid green; */
+}
+
+.history {
+    width: 27.9rem;
+    height: 25.5rem;
+
+    margin-top: 27.2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    /* border: 1px solid blue; */
+}
+
+.history>h2 {
+    width: 27.9rem;
+    height: 6.4rem;
+
+    color: var(--Black);
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.history>p {
+    font-family: 'Alata',
+        sans-serif;
+    width: 27.9rem;
+    height: 17.5rem;
+
+    margin-top: 1.6rem;
+
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+
+    color: var(--Dark-Gray);
+}
+
+.portfolio {
+
+    width: 32.7rem;
+    height: 120.8rem;
+
+    margin-top: 9.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.portfolio>h2 {
+    width: 27.9rem;
+    height: 3.2rem;
+
+    font-family: 'Josefin Sans',
+        sans-serif;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    margin-top: 3.4rem;
+
+    width: 15.7rem;
+    height: 4rem;
+
+    background: transparent;
+
+    font-family: 'Alata',
+        sans-serif;
+
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: .5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+
+
+.products-container {
+    display: grid;
+    grid-template-columns: 32.7rem;
+    grid-template-rows: 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem;
+    row-gap: 2.4rem;
+    text-align: center;
+
+    margin-top: 4.8rem;
+}
+
+.grid-item {
+    width: 32.5rem;
+    height: 12rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--White);
+    text-decoration: none;
+
+    position: relative;
+}
+
+.grid-item>h3 {
+    position: relative;
+    left: 2rem;
+    top: 5.2rem;
+    bottom: 2.2rem;
+
+    height: 4.8rem;
+    max-width: 12.7rem;
+
+
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+
+/* individual background images for mobile screen */
+@media only screen and (max-width: 501px) {
+    .deep-earth {
+        background-image: url('images/mobile/image-deep-earth.jpg');
+    }
+
+    .night-arcade {
+        background-image: url('images/mobile/image-night-arcade.jpg');
+    }
+
+    .soccer-vr {
+        background-image: url('images/mobile/image-soccer-team.jpg');
+    }
+
+    .the-grid {
+        background-image: url('images/mobile/image-grid.jpg');
+    }
+
+    .the-grid>h3 {
+        width: 5.8rem;
+    }
+
+    .above-vr {
+        background-image: url('images/mobile/image-from-above.jpg');
+    }
+
+    .pocket-borealis {
+        background-image: url('images/mobile/image-pocket-borealis.jpg');
+    }
+
+    .the-curiosity {
+        background-image: url('images/mobile/image-curiosity.jpg');
+    }
+
+    .fisheye {
+        background-image: url('images/mobile/image-fisheye.jpg');
+    }
+}
+
+footer {
+    font-family: 'Alata',
+        sans-serif;
+
+    background-color: var(--Black);
+
+    position: absolute;
+    top: 274.4rem;
+
+    width: 37.5rem;
+    height: 47rem;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--White);
+}
+
+
+footer img {
+    position: absolute;
+    top: 5.6rem;
+
+    width: 14.4rem;
+    height: 2.4rem;
+}
+
+.footer-menu {
+    position: absolute;
+    top: 11.2rem;
+    bottom: 16.9rem;
+
+    width: 5.9rem;
+    height: 18.9rem;
+
+    font-size: 1.5rem;
+    line-height: 2.5;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.social-media {
+    position: absolute;
+    top: 34.9rem;
+    left: 11.6rem;
+    right: 11.6rem;
+
+    width: 14.4rem;
+    height: 2.4rem;
+
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+.social-media-item img {
+
+    position: static;
+    width: 2.4rem;
+    height: auto;
+}
+
+.copyright {
+    position: absolute;
+    top: 38.9rem;
+
+    width: 27.2rem;
+    height: 2.5rem;
+
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+
+    color: var(--Dark-Gray);
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    display: inline;
+}
+
+
+
+
+/* desktop styles */
+@media only screen and (min-width: 501px) {
+
+    body {
+        width: 144rem;
+        height: 289.6rem;
+    }
+
+
+    header {
+        width: 144rem;
+        height: 65rem;
+
+        background-image: url('images/desktop/image-hero.jpg');
+    }
+
+    .logo {
+        width: 19.2rem;
+        height: 3.2rem;
+
+        top: 6.4rem;
+        left: 16.5rem;
+    }
+
+    #header_content {
+        width: 65rem;
+        height: 27.8rem;
+
+        left: 16.5rem;
+        top: 22.6rem;
+
+        font-size: 7.2rem;
+        line-height: 7rem;
+
+        padding: 4rem;
+    }
+
+    /* hide mobile menu in desktop screen */
+    nav {
+        display: block;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .menu {
+        background: none;
+    }
+
+
+    .menu ol {
+        width: 38rem;
+        height: 2.5rem;
+        position: absolute;
+        top: 6.8rem;
+        left: 89.5rem;
+
+        font-family: 'Alata',
+            sans-serif;
+        ;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        font-weight: 400;
+        text-transform: none;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        position: absolute;
+        top: 81rem;
+    }
+
+    .introduction {
+
+        width: 111.1rem;
+        height: 50rem;
+
+        background-image: url('images/mobile/image-interactive.jpg');
+        background-repeat: no-repeat;
+        background-size: 73.1rem 50rem;
+    }
+
+
+    .history {
+        width: 54.1rem;
+        height: 31.7rem;
+
+        margin-left: 57rem;
+        margin-top: 18.3rem;
+
+        background-color: white;
+
+        display: block;
+
+        position: relative;
+    }
+
+    .history>h2 {
+        width: 44.5rem;
+        height: 9.6rem;
+
+        position: absolute;
+        top: 9.6rem;
+        left: 9.6rem;
+        bottom: 12.5rem;
+
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        text-align: left;
+    }
+
+    .history>p {
+        width: 44.7rem;
+        height: 10rem;
+
+        margin: 0;
+        position: absolute;
+        top: 21.7rem;
+        left: 9.6rem;
+
+        text-align: left;
+
+        color: var(--Dark-Gray);
+    }
+
+    .portfolio {
+
+        width: 111.4rem;
+        height: 105.8rem;
+
+        margin-top: 18.4rem;
+
+        display: block;
+        position: relative;
+    }
+
+    .portfolio>h2 {
+        position: relative;
+        width: 44.5rem;
+        height: 4.8rem;
+
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+
+        text-align: left;
+    }
+
+    button {
+        margin: 0;
+        position: absolute;
+        top: .3rem;
+        right: 0;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: var(--Black);
+        color: var(--White);
+    }
+
+    .products-container {
+        display: grid;
+        grid-template-columns: 25.6rem 25.6rem 25.6rem 25.6rem;
+        grid-template-rows: 45rem 45rem;
+        gap: 3rem;
+
+        margin-top: 8rem;
+    }
+
+    .grid-item {
+        width: 25.6rem;
+        height: 45rem;
+    }
+
+    /* for grayout effect on hover without dimming the text */
+    .deep-earth::before,
+    .night-arcade::before,
+    .soccer-vr::before,
+    .the-grid::before,
+    .above-vr::before,
+    .pocket-borealis::before,
+    .the-curiosity::before,
+    .fisheye::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 25.6rem 45rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+
+    .grid-item:hover::before {
+        opacity: 0.3;
+    }
+
+    .grid-item:hover {
+        color: var(--Black);
+    }
+
+    .grid-item h3 {
+        left: 4rem;
+        top: 35.4rem;
+        bottom: 3.2rem;
+
+        height: 6.4rem;
+        max-width: 16.9rem;
+
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+
+
+    .deep-earth::before {
+        background-image: url('images/desktop/image-deep-earth.jpg');
+
+    }
+
+    .night-arcade::before {
+        background-image: url('images/desktop/image-night-arcade.jpg');
+    }
+
+    .soccer-vr::before {
+        background-image: url('images/desktop/image-soccer-team.jpg');
+    }
+
+    .the-grid::before {
+        background-image: url('images/desktop/image-grid.jpg');
+    }
+
+    .the-grid h3 {
+        width: 7.7rem;
+    }
+
+    .above-vr::before {
+        background-image: url('images/desktop/image-from-above.jpg');
+    }
+
+    .pocket-borealis::before {
+        background-image: url('images/desktop/image-pocket-borealis.jpg');
+    }
+
+    .the-curiosity::before {
+        background-image: url('images/desktop/image-curiosity.jpg');
+    }
+
+    .fisheye::before {
+        background-image: url('images/desktop/image-fisheye.jpg');
+    }
+
+
+    footer {
+        position: absolute;
+        top: 273.6rem;
+
+        bottom: 0;
+        width: 144rem;
+        height: 16rem;
+
+        display: flex;
+    }
+
+    footer img {
+        top: 4.4rem;
+        left: 16.5rem;
+    }
+
+    .footer-menu {
+        position: absolute;
+        top: 9.2rem;
+        left: 16.5rem;
+
+        width: 38rem;
+        height: 2.5rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .social-media {
+        position: absolute;
+        top: 4.4rem;
+        left: 113.1rem;
+        right: 16.5rem;
+        bottom: 9.2rem;
+    }
+
+    .social-media-item img:hover {
+        border-bottom: 1px solid white;
+        padding-bottom: .8rem;
+    }
+
+    .copyright {
+
+        position: absolute;
+        top: 9.2rem;
+        left: 100.3rem;
+
+        width: 27.2rem;
+        height: 2.5rem;
+    }
+
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+        position: absolute;
+        bottom: 0;
+
+        margin: 0 auto;
+    }
+
+    .attribution a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    }
+
+
+    /* display a white line (50% width and 8px distance) below each link when hover */
+    .menu a,
+    .footer-menu a {
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu a:hover::after,
+    .footer-menu a:hover::after {
+        content: "";
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        bottom: -.8rem;
+        border-bottom: 1px solid white;
+    }
+
+}
