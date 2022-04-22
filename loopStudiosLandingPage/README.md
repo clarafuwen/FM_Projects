@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot_desktop](./screenshot.jpg)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://admirable-moonbeam-6f03f7.netlify.app/)
 
 ## My process
 
@@ -44,6 +44,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Clara Wen](https://github.com/clarafuwen/FM_Projects)
+- Website - [Clara Wen](https://github.com/clarafuwen/FM_Projects/tree/main/loopStudiosLandingPage)
 - Frontend Mentor - [@clarafuwen](https://www.frontendmentor.io/profile/clarafuwen)
 
