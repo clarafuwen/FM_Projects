@@ -290,6 +290,7 @@ li a {
 
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 
   border: 0.1rem solid rgb(0, 0, 0, 0.05);
 }
@@ -566,6 +567,7 @@ li a {
 .wrapper .pledge-amount {
   padding: 0;
   margin: 0;
+  color: var(--Moderate-cyan);
 }
 
 .box .product-description {
@@ -1135,9 +1137,10 @@ button:hover {
     /* align-self: middle; */
   }
 
-  .selection-modal h3 {
+  .selection-modal span {
     font-size: 1.6rem;
     font-size: 700;
+    color: var(--Neutral-Black);
     margin: 0;
   }
 
@@ -1173,7 +1176,7 @@ button:hover {
     /* border: 1px solid green; */
   }
 
-  .wrapper h3 {
+  .wrapper span {
     height: 2rem;
     max-width: 19rem;
 
@@ -1181,10 +1184,10 @@ button:hover {
     font-weight: 700;
     text-align: left;
 
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
-  .wrapper h3:hover {
+  .wrapper span:hover {
     color: var(--Moderate-cyan);
     cursor: pointer;
   }
