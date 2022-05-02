@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_desktop](./screenshot.jpg)
+![screenshot_desktop](https://github.com/clarafuwen/FM_Projects/blob/a930802ad4ec66d6e2651bd5bfecca6915f5931a/crowdfundingProductPage/screencapture_desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/clarafuwen/FM_Projects/tree/main/crowdfundingProductPage)
+- Live Site URL: [Add live site URL here](https://joyful-kleicha-ea32e8.netlify.app/
 
 ## My process
 
@@ -47,5 +47,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Clara Wen](https://github.com/clarafuwen/FM_Projects/tree/main/crowdfundingProductPage)
+- Frontend Mentor - [@clarafuwen](https://www.frontendmentor.io/profile/clarafuwen)
