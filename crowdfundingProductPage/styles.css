@@ -184,6 +184,7 @@ li a {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0;
+  line-height: normal;
   text-align: center;
 
   margin-right: 0.9rem;
@@ -197,7 +198,7 @@ li a {
   background-color: transparent;
 }
 
-.bookmark-project > p {
+.bookmark-project > span {
   display: none;
 }
 
@@ -875,11 +876,11 @@ button:hover {
     cursor: pointer;
   }
 
-  .bookmark-project > p {
+  .bookmark-project > span {
     display: block;
   }
 
-  .bookmark {
+  .bookmark-project .bookmark {
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 0;
