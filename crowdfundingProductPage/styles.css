@@ -1,0 +1,1371 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+  --Neutral-Black: hsl(0, 0%, 0%);
+  --Dark-gray: hsl(0, 0%, 48%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* mobile styles start from here */
+body {
+  font-family: "Commissioner", sans-serif;
+
+  width: 37.5rem;
+  height: 271.9rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  background-color: #fafafa;
+
+  color: var(--Dark-gray);
+
+  /* border: 1px solid blue; */
+}
+
+.header {
+  width: 37.5rem;
+  height: 30rem;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/images/image-hero-mobile.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.logo {
+  margin-top: 3.2rem;
+  margin-left: 2.4rem;
+}
+
+.toggle-icons {
+  position: absolute;
+  top: 3.5rem;
+  right: 2.4rem;
+
+  z-index: 10;
+}
+
+/* toggle menu styles on mobile version */
+.nav {
+  display: none;
+  width: 32.7rem;
+  height: 21.2rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+
+  position: absolute;
+  left: 2.4rem;
+  top: 8.8rem;
+
+  z-index: 10;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  width: 32.7rem;
+  height: 7.07rem;
+
+  display: flex;
+  align-items: center;
+}
+
+/* only the first two list item have underlines */
+li:nth-of-type(-n + 2) {
+  border-bottom: 0.1rem solid #979797;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+
+  color: var(--Neutral-Black);
+
+  margin-left: 2.4rem;
+}
+
+.main {
+  width: 32.7rem;
+
+  position: absolute;
+  top: 24.4rem;
+}
+
+.project-intro {
+  width: 32.7rem;
+  height: 28.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  border-radius: 0.8rem;
+
+  border: 0.1rem solid rgb(0, 0, 0, 0.05);
+}
+
+.logo-mastercraft {
+  position: absolute;
+  top: -2.8rem;
+  left: 13.5rem;
+}
+
+.project-intro h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+
+  height: 4.8rem;
+  width: 25rem;
+
+  margin-top: 5.2rem;
+
+  color: var(--Neutral-Black);
+}
+
+.project-intro > p {
+  width: 28rem;
+  height: 4.8rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+
+  margin-top: 1.6rem;
+
+  color: var(--Dark-gray);
+}
+
+.icons {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-back-roject {
+  width: 21.4rem;
+  height: 5.6rem;
+
+  border-radius: 3.35rem;
+  border: none;
+  background-color: var(--Moderate-cyan);
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+
+  margin-right: 0.9rem;
+
+  color: #ffffff;
+}
+
+.bookmark-project,
+.bookmark-project:hover {
+  border: none;
+  background-color: transparent;
+}
+
+.bookmark-project > p {
+  display: none;
+}
+
+.project-stats {
+  width: 32.7rem;
+  height: 41.2rem;
+
+  margin-top: 2.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 0.1rem solid rgb(0, 0, 0, 0.05);
+}
+
+.stats-wrapper {
+  margin-top: 3.2rem;
+
+  height: 29.6rem;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* border: 1px solid red; */
+}
+
+.project-stats .heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+
+  color: var(--Neutral-Black);
+}
+
+.project-stats .sub-heading {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+
+/* styles for two underlines inside the box */
+.stats-item-wrapper:nth-of-type(-n + 2) {
+  display: inline-block;
+  position: relative;
+}
+
+.stats-item-wrapper:nth-of-type(-n + 2)::before {
+  content: "";
+  position: absolute;
+  left: 19.2%;
+  right: 19.2%;
+  bottom: -2.4rem;
+  border-bottom: 1px solid #979797;
+}
+
+.progress-bar {
+  width: 27.9rem;
+  height: 1.2rem;
+
+  border-radius: 3.35rem;
+
+  background-color: hsl(0, 0%, 0%, 5%);
+
+  margin-top: 3.2rem;
+}
+
+.progress-bar-filler {
+  height: 1.2rem;
+  width: 21.83rem;
+
+  border-radius: 3.35rem;
+
+  background-color: var(--Moderate-cyan);
+}
+
+.about {
+  width: 32.7rem;
+  height: 165.5rem;
+  border-radius: 0.8rem;
+
+  margin-top: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 0.1rem solid rgb(0, 0, 0, 0.05);
+}
+
+.about > h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: 2.4rem;
+  margin-top: 4.1rem;
+  margin-bottom: 0;
+
+  color: var(--Neutral-Black);
+}
+
+.about > p {
+  width: 28rem;
+
+  margin-left: 2.4rem;
+  margin-top: 2.4rem;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  text-align: left;
+
+  color: var(--Dark-gray);
+
+  /* border: 1px solid blue; */
+}
+
+.products-container {
+  width: 27.9rem;
+  height: 115.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 3.3rem auto;
+}
+
+.product {
+  width: 27.9rem;
+  height: 37rem;
+
+  border: 0.1rem solid rgb(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+}
+
+.out-of-stock {
+  opacity: 50%;
+}
+
+.product > h3 {
+  margin-top: 2.4rem;
+  margin-left: 2.4rem;
+  margin-bottom: 0.8rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+
+  color: var(--Neutral-Black);
+
+  /* border: 1px solid red; */
+}
+
+.pledge-amount {
+  height: 1.7rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--Moderate-cyan);
+
+  margin-left: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.product-description {
+  width: 23.1rem;
+
+  margin-left: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.product-description,
+.selection-modal > p,
+.modal-p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.product-inventory {
+  display: block;
+  margin-left: 2.4rem;
+  margin-bottom: 2.4rem;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+}
+
+.product-inventory strong {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: left;
+
+  color: var(--Neutral-Black);
+
+  margin-right: 0.8rem;
+}
+
+.btn-select {
+  width: 15.7rem;
+  height: 4.8rem;
+
+  margin-left: 2.4rem;
+
+  border-radius: 33.5rem;
+  border: none;
+
+  background-color: var(--Moderate-cyan);
+  color: #ffffff;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* button out-of-stock */
+.btn-oos,
+.btn-oos:hover {
+  background-color: var(--Dark-gray);
+}
+
+.overlay {
+  /* display: none; */
+  width: 37.5rem;
+  height: 160rem;
+  background-color: var(--Neutral-Black);
+  opacity: 50%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.selection-modal {
+  /* display: none; */
+  width: 32.7rem;
+
+  position: absolute;
+  top: -12.3rem;
+  left: 0;
+
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+
+  z-index: 10;
+}
+
+.heading-wrapper {
+  margin-left: 2.4rem;
+  margin-top: 3.2rem;
+
+  width: 27.9rem;
+  height: 2.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: var(--Neutral-Black);
+}
+
+.modal-intro {
+  width: 27.9rem;
+  height: 4.8rem;
+
+  margin-left: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.selection-modal h3 {
+  font-size: 1.4rem;
+  color: var(--Neutral-Black);
+  margin-bottom: 0.8rem;
+}
+
+.box .wrapper {
+  width: 22rem;
+  height: 4.2rem;
+
+  margin-top: 2.4rem;
+  margin-left: 2.4rem;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  /* border: 1px solid blue; */
+}
+
+.wrapper input {
+  -webkit-appearance: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 0.1rem solid rgb(0, 0, 0, 0.15);
+
+  margin-right: 1.6rem;
+}
+
+/* when radio button checked, fill with moderate-cyan color */
+.wrapper input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  left: 2.7%;
+  top: 36%;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--Moderate-cyan);
+  display: none;
+}
+
+.reward-boxes {
+  height: max-content;
+  width: 27.9rem;
+
+  margin: 2.4rem auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.box {
+  border: 0.1rem solid rgb(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+
+  width: 27.9rem;
+  margin: 0 auto;
+  height: auto;
+  transition: 0.5s;
+}
+
+.selected-border {
+  border: 0.2rem solid var(--Moderate-cyan);
+}
+
+.wrapper .pledge-amount {
+  padding: 0;
+  margin: 0;
+}
+
+.box .product-description {
+  margin-top: 2.4rem;
+  margin-left: 2.4rem;
+
+  width: 23rem;
+  height: 12rem;
+}
+
+.box .product-inventory {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  height: 2.2rem;
+
+  margin: 2.4rem auto 3.2rem 2.4rem;
+}
+
+.box strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 0.8rem;
+}
+
+.selected-pledge {
+  /* display: none; */
+  width: 27rem;
+  height: 13.95rem;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  border-top: 0.1rem solid rgb(0, 0, 0, 0.15);
+
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.selected-pledge > p {
+  margin-left: 8.4rem;
+  margin-top: 2.35rem;
+
+  height: 2.8rem;
+  width: 11.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+}
+
+.btn-submit-pledge {
+  width: 11.5rem;
+  height: 4.8rem;
+
+  border-radius: 3.35rem;
+  border: none;
+  background-color: var(--Moderate-cyan);
+
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.enter-pledge-amount {
+  position: relative;
+  display: inline-block;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* place the $ inside input box */
+.enter-pledge-amount::before {
+  content: "$";
+  position: absolute;
+  top: 1.5rem;
+  left: 2.4rem;
+  color: rgb(0, 0, 0, 0.25);
+}
+.dollar-sign {
+  border: 1px inset #ccc;
+  /* padding-right: 1.5rem; */
+}
+
+.enter-pledge-amount > input {
+  width: 10rem;
+  height: 4.8rem;
+
+  font-weight: 700;
+  text-align: center;
+  border-radius: 3.35rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.15);
+
+  color: var(--Neutral-Black);
+
+  overflow: hidden;
+}
+
+.enter-pledge-amount > input::placeholder {
+  font-weight: 700;
+  position: absolute;
+  top: 1.5rem;
+  left: 4.1rem;
+  color: var(--Neutral-Black);
+}
+
+.btn-wrapper {
+  margin-left: 2.4rem;
+  margin-top: 1.6rem;
+
+  height: 4.8rem;
+  width: 23.1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.success-modal {
+  /* display: none; */
+  width: 32.7rem;
+  height: 38.2rem;
+
+  position: absolute;
+  top: -10.1rem;
+
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+
+  z-index: 10;
+}
+
+.icon-check {
+  margin: 3.2rem auto auto 13.1rem;
+}
+
+.success-modal h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+
+  width: 27.9rem;
+  height: 2.2rem;
+
+  color: var(--Neutral-Black);
+
+  margin: 2.4rem 2.4rem;
+}
+
+.success-modal p {
+  width: 27.9rem;
+  height: 9.6rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: center;
+
+  margin-left: 2.4rem;
+}
+
+.success-modal > button {
+  width: 10.7rem;
+  height: 4.8rem;
+
+  background-color: var(--Moderate-cyan);
+  color: #ffffff;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+
+  border: none;
+  border-radius: 3.35rem;
+
+  margin: 3.15rem 11.1rem 4.05rem 10.9rem;
+}
+
+button:hover {
+  background-color: var(--Dark-cyan);
+}
+
+/* desktop styles starts */
+@media only screen and (min-width: 501px) {
+  body {
+    width: 144rem;
+    height: 215.8rem;
+  }
+
+  .header {
+    width: 144rem;
+    height: 40rem;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0)
+      ),
+      url("/images/image-hero-desktop.jpg");
+
+    /* position: relative; */
+  }
+
+  .logo {
+    margin-top: 4.8rem;
+    margin-left: 16.6rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    position: absolute;
+    left: 105rem;
+    top: 5rem;
+
+    z-index: 0;
+  }
+
+  .nav-menu {
+    width: 22.5rem;
+    height: 1.6rem;
+    flex-direction: row;
+  }
+
+  li {
+    display: inline-block;
+    height: 1.6rem;
+    /* max-width: 6.9rem; */
+  }
+
+  li:nth-of-type(-n + 2) {
+    border-bottom: none;
+  }
+
+  li > a {
+    font-size: 1.3rem;
+    text-align: left;
+
+    color: #ffffff;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  li > a:hover {
+    text-decoration: underline;
+  }
+
+  .main {
+    width: 73rem;
+
+    position: absolute;
+    top: 30.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .project-intro {
+    width: 73rem;
+    height: 26.9rem;
+  }
+
+  .logo-mastercraft {
+    position: absolute;
+    top: -2.8rem;
+    left: 33.7rem;
+  }
+
+  .project-intro h1 {
+    font-size: 2.8rem;
+    text-align: center;
+
+    /* height: 3.4em; */
+    width: 45.3rem;
+
+    margin-top: 5.6rem;
+  }
+
+  .project-intro > p {
+    width: 50.7rem;
+    height: 2rem;
+
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+
+    margin-top: 0.5rem;
+  }
+
+  .bookmark-project,
+  .bookmark-project:hover {
+    width: 17.4rem;
+    height: 5.6;
+    border-radius: 3.35rem;
+    background-color: hsl(0, 0%, 0%, 5%);
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bookmark-project > p {
+    display: block;
+  }
+
+  .bookmark {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--Dark-gray);
+    padding-left: 1.6rem;
+  }
+
+  /* for toggling bookmark icon */
+  .checked {
+    fill: var(--Dark-cyan);
+  }
+
+  .bookmarked {
+    color: var(--Dark-cyan);
+  }
+
+  .icons {
+    margin-top: 3.5rem;
+    width: 63.4rem;
+    height: 5.6rem;
+    gap: 25.6rem;
+  }
+
+  .btn-back-roject {
+    width: 20.4rem;
+    height: 5.6rem;
+
+    margin: 0;
+  }
+
+  .project-stats {
+    width: 73rem;
+    height: 21.2rem;
+    margin: 0;
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .stats-wrapper {
+    margin-top: 4.8rem;
+
+    height: 6.6rem;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+
+    /* border: 1px solid red; */
+  }
+
+  .project-stats .heading {
+    margin-bottom: 0.8rem;
+  }
+
+  .project-stats .sub-heading {
+    font-size: 1.5rem;
+  }
+  .stats-item-wrapper {
+    display: block;
+    height: 6.3rem;
+    width: 22.7rem;
+    padding-left: 4.8rem;
+
+    /* border: 1px solid blue; */
+  }
+
+  /* styles for two underlines inside the box */
+  .stats-item-wrapper:nth-of-type(-n + 2) {
+    border-right: 1px solid #979797;
+  }
+
+  /* cancel mobile style horizontal underlines */
+  .stats-item-wrapper:nth-of-type(-n + 2)::before {
+    border: none;
+  }
+
+  .progress-bar {
+    width: 63rem;
+    margin-top: 3.7rem;
+    margin-left: 4.8rem;
+  }
+
+  .progress-bar-filler {
+    width: 49.6rem;
+  }
+
+  .about {
+    width: 73rem;
+    height: 119.7rem;
+
+    margin-top: 0;
+
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .about > h2 {
+    font-size: 2rem;
+    margin-left: 4.8rem;
+    margin-top: 4.8rem;
+
+    margin-bottom: 0;
+  }
+
+  .about > p {
+    width: 63.4rem;
+
+    margin-left: 4.8rem;
+    margin-top: 3.3rem;
+
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+
+    /* border: 1px solid blue; */
+  }
+
+  .products-container {
+    width: 63.4rem;
+    /* height: 115.8rem; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+
+    margin: 4.2rem 4.8rem 4.8rem 4.7rem;
+  }
+
+  .product {
+    width: 63.4rem;
+    height: 24.8rem;
+    display: block;
+    position: relative;
+  }
+
+  /* .out-of-stock {
+    opacity: 50%;
+  } */
+
+  .product > h3 {
+    margin-top: 3.3rem;
+    margin-left: 3.2rem;
+    margin-bottom: 0;
+
+    font-size: 1.8rem;
+
+    height: 2.2rem;
+    max-width: 22rem;
+
+    /* border: 1px solid red; */
+  }
+
+  .pledge-amount {
+    height: 1.8rem;
+    max-width: 14.2rem;
+
+    font-size: 1.5rem;
+    text-align: right;
+
+    position: absolute;
+    top: 3.5rem;
+    right: 3.2rem;
+  }
+
+  .product-description {
+    width: 57.5rem;
+    height: 6rem;
+
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    align-self: center;
+
+    margin-top: 2.8rem;
+    margin-left: 3.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .product-inventory {
+    margin-left: 3.2rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .btn-select {
+    position: absolute;
+    top: 16.4rem;
+    right: 3rem;
+  }
+
+  /* button out-of-stock */
+  .btn-oos,
+  .btn-oos:hover {
+    background-color: var(--Dark-gray);
+  }
+
+  .overlay {
+    width: 144rem;
+    height: 136.9rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .selection-modal {
+    width: 73rem;
+
+    position: absolute;
+    top: -12.4rem;
+    left: 35.5;
+  }
+
+  .heading-wrapper {
+    margin-left: 4.8rem;
+    margin-top: 4.85rem;
+
+    width: 18.7rem;
+    height: 2.9rem;
+
+    display: block;
+    text-align: center;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 3.19rem;
+    left: 68.4rem;
+  }
+
+  .modal-heading {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .modal-intro {
+    width: 63.4rem;
+    height: 3rem;
+
+    margin-left: 4.8rem;
+    margin-top: 1.9rem;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+
+    /* align-self: middle; */
+  }
+
+  .selection-modal h3 {
+    font-size: 1.6rem;
+    font-size: 700;
+    margin: 0;
+  }
+
+  .reward-boxes {
+    /* height: max-content; */
+    width: 63.4rem;
+    margin: 3.2rem auto;
+  }
+
+  .box {
+    width: 63.4rem;
+    position: relative;
+  }
+
+  .box .wrapper {
+    width: 42rem;
+    height: 2.4rem;
+    margin: 0;
+
+    margin-left: 2.8rem;
+    margin-top: 3.5rem;
+    /* position: relative; */
+
+    /* border: 1px solid blue; */
+  }
+
+  .wrapper label {
+    width: 37rem;
+    height: 1.9rem;
+    display: flex;
+
+    margin-bottom: 1.5rem;
+    /* border: 1px solid green; */
+  }
+
+  .wrapper h3 {
+    height: 2rem;
+    max-width: 19rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+
+    margin-left: 1rem;
+  }
+
+  .wrapper h3:hover {
+    color: var(--Moderate-cyan);
+    cursor: pointer;
+  }
+
+  .wrapper .pledge-amount {
+    max-width: 15.2rem;
+    height: 2rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0;
+    margin-left: 1.6rem;
+    text-align: left;
+
+    position: static;
+  }
+
+  /* when radio button checked, fill with moderate-cyan color */
+  .wrapper input:checked ~ .checkmark::after {
+    display: block;
+  }
+
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 1.4%;
+    top: 27%;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--Moderate-cyan);
+    display: none;
+  }
+
+  .box .product-description {
+    margin-top: 1.4rem;
+    margin-left: 7.6rem;
+
+    width: 54rem;
+    height: 5.6rem;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+
+  .box .product-inventory {
+    position: absolute;
+    right: 2.8rem;
+    top: 3rem;
+
+    height: 1.8rem;
+
+    margin: 0;
+  }
+
+  .selected-pledge {
+    /* display: none; */
+    width: 63rem;
+    height: 9.5rem;
+  }
+
+  .selected-pledge > p {
+    margin-left: 2.8rem;
+    margin-top: 3.4rem;
+
+    height: 2.8rem;
+    width: 12rem;
+
+    font-size: 1.5rem;
+  }
+
+  .btn-submit-pledge {
+    width: 10.7rem;
+    height: 4.8rem;
+  }
+
+  .enter-pledge-amount {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* place the $ inside input box */
+  .enter-pledge-amount::before {
+    content: "$";
+    position: absolute;
+    top: 1.5rem;
+    left: 2.4rem;
+    color: rgb(0, 0, 0, 0.25);
+  }
+  .dollar-sign {
+    border: 1px inset #ccc;
+    /* padding-right: 1.5rem; */
+  }
+
+  .enter-pledge-amount > input {
+    width: 10rem;
+    height: 4.8rem;
+
+    font-weight: 700;
+    text-align: center;
+    border-radius: 3.35rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.15);
+
+    color: var(--Neutral-Black);
+
+    overflow: hidden;
+  }
+
+  .enter-pledge-amount > input::placeholder {
+    font-weight: 700;
+    position: absolute;
+    top: 1.5rem;
+    left: 4.1rem;
+    color: var(--Neutral-Black);
+  }
+
+  .reward-amount:focus {
+    outline: none !important;
+    border: 0.1rem solid var(--Moderate-cyan);
+    cursor: pointer;
+    caret-color: var(--Moderate-cyan);
+  }
+
+  .btn-wrapper {
+    position: static;
+    margin-left: 38.3rem;
+    margin-top: -3.4rem;
+
+    width: 22.3rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .success-modal {
+    /* display: none; */
+    width: 54rem;
+    height: 44.9rem;
+
+    position: absolute;
+    top: 15.2rem;
+    left: 9.5rem;
+  }
+
+  .icon-check {
+    height: 9rem;
+    width: 9rem;
+    margin-top: 4.8rem;
+    margin-left: 22.5rem;
+  }
+
+  .success-modal h3 {
+    font-size: 2.4rem;
+    position: static;
+
+    width: 44.4rem;
+    height: 2.9rem;
+
+    margin-top: 4.75rem;
+    margin-left: 4.8rem;
+    margin-bottom: 0;
+  }
+
+  .success-modal p {
+    width: 44.4rem;
+    height: 9rem;
+
+    font-size: 1.6rem;
+
+    line-height: 3rem;
+
+    margin-left: 4.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .success-modal > button {
+    margin: 3.2rem 21.7rem 4.85rem 21.6rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
