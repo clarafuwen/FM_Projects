@@ -1,10 +1,12 @@
 @use "../util" as u;
 
+//to use rem
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
+//reset styles
 *,
 *::before,
 *::after {
@@ -20,6 +22,7 @@ a:active {
   text-decoration: none;
 }
 
+//mobile first workflow
 body {
   font-family: u.$font;
   font-weight: 400;
@@ -110,12 +113,14 @@ header {
   }
 
   @include u.breakpoint(desktop) {
+    //switch from flexbox to grid for easy styling desktop version
     display: grid;
     margin: 6.7rem auto 0 auto;
 
     width: 111rem;
     height: 134.4rem;
 
+    //two rows with first row containing 2 cols and second row 1 col
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     column-gap: 9.6rem;
@@ -151,6 +156,7 @@ header {
     gap: 4rem;
   }
 
+  //'intro' as the first grid item on the first row for desktop version
   @include u.breakpoint(desktop) {
     width: 82.4rem;
     height: 60rem;
@@ -249,6 +255,7 @@ header {
   }
 }
 
+//'stats' as the 2nd grid item on the first row for desktop version
 .stats {
   height: 31.3rem;
   width: 34.3rem;
@@ -327,6 +334,7 @@ header {
     margin-top: 9.2rem;
   }
 
+  //'quote-wrapper' as the only grid item, spanning two cols on the 2nd row for desktop version
   @include u.breakpoint(desktop) {
     grid-column: 1 / span 2;
 

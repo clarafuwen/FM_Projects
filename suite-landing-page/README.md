@@ -48,9 +48,9 @@ This is my first time coding a webpage with Sass using a little bit bem. The set
 
 ### Useful resources
 
-- (https://www.youtube.com/watch?v=jfMHA8SqUL4&t=6953s) - Jessica Chan's Sass tutorial definitly taught me a alot about Sass and how to code responsively in genral.
+- (https://www.youtube.com/watch?v=jfMHA8SqUL4&t=6953s) - Jessica Chan's Sass tutorial definitly taught me a alot about Sass and how to code responsively in general.
 
 ## Author
 
 - Website - [Wen Clara Fu](https://github.com/clarafuwen/FM_Projects)
-- Frontend Mentor - [@yclarafuwen](https://www.frontendmentor.io/profile/clarafuwen)
+- Frontend Mentor - [@clarafuwen](https://www.frontendmentor.io/profile/clarafuwen)
