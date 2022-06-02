@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-This is my first time coding a webpage with Sass using BEM. The setup in the beginning took longer than just writing plain CSS, but worth the time. Once the partials are in place, coding boilerplate was like with CSS but so much more organized. Wish I could've spent more time in planning and deciding the layout for elements, like choosing between Grid and flexbox. This should improve the readability of my program.
+This is my first time coding a webpage with Sass using a little bit bem. The setup in the beginning took longer than just writing plain CSS, but worth the time. Once the partials are in place, coding boilerplate was like with CSS but so much more organized. Wish I could've spent more time in planning and deciding the layout for elements, like choosing between Grid and flexbox. This should improve the readability of my program.
 
 ### Useful resources
 

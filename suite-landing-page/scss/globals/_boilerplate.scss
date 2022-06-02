@@ -155,7 +155,7 @@ header {
     width: 82.4rem;
     height: 60rem;
 
-    background-image: url("../assets/image-hero-portrait@2x.webp");
+    background-image: url("../assets/image-hero-portrait@2x.png");
     background-size: 35rem 60rem;
 
     gap: 0;
@@ -174,7 +174,7 @@ header {
     width: 28.7rem;
     height: 3.6rem;
 
-    content: url("../assets/curve1_desktop.svg");
+    // content: url("../assets/curve1_desktop.svg");
   }
 }
 
@@ -360,6 +360,18 @@ header {
       height: 58.956rem;
 
       margin-left: 12.149rem;
+    }
+  }
+
+  .jeremy__picture {
+    display: block;
+    width: 25.2rem;
+    height: 40rem;
+    @include u.breakpoint(desktop) {
+      width: 35.981rem;
+      height: 58.956rem;
+
+      content: url("../assets/image-jeremy-large@2x.webp");
     }
   }
 
