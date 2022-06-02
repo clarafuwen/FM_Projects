@@ -304,7 +304,9 @@ header {
 .quote-wrapper .jeremy {
   width: 25.2rem;
   height: 40rem;
+  height: 100%;
   position: relative;
+  display: block;
   margin-left: 7.5rem;
   background: url("../assets/pattern-blur.svg");
   background-repeat: no-repeat;

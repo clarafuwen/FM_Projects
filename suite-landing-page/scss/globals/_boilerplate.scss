@@ -349,8 +349,10 @@ header {
   .jeremy {
     width: 25.2rem;
     height: 40rem;
+    height: 100%;
 
     position: relative;
+    display: block;
 
     margin-left: 7.5rem;
 
@@ -519,6 +521,7 @@ header {
   @include u.breakpoint(desktop) {
     margin-left: 51.7rem;
     margin-top: 16.115rem;
+    // content: url("../assets/curve2_desktop.svg");
   }
 }
 
