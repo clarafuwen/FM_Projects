@@ -1,0 +1,582 @@
+@use "../util" as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  font-family: u.$font;
+  font-weight: 400;
+
+  width: 37.5rem;
+  height: 238.9rem;
+
+  background-color: var(--white);
+  background: linear-gradient(180deg, var(--white) 84.22%, var(--beige) 15.78%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // border: 1px solid red;
+
+  @include u.breakpoint(tablet) {
+    width: 76.8rem;
+    height: 196.2rem;
+
+    background: linear-gradient(
+      180deg,
+      var(--white) 60.68%,
+      var(--beige) 39.14%
+    );
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 144rem;
+    height: 171.6rem;
+
+    background: linear-gradient(180deg, var(--white) 73%, var(--beige) 27%);
+  }
+}
+
+header {
+  width: 34.3rem;
+  height: 4.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2.4rem auto 0 auto;
+
+  @include u.breakpoint(tablet) {
+    width: 68.9rem;
+    height: 5.6rem;
+
+    margin: 4rem auto 0 auto;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 110.885rem;
+    // height: 5.6rem;
+
+    margin: 5rem auto 0 auto;
+  }
+}
+
+.logo {
+  height: 3.2rem;
+  width: 8.1rem;
+
+  @include u.breakpoint(desktop) {
+    height: 2.48rem;
+    width: 7.841rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+
+  width: 37.5rem;
+  margin: 5.6rem auto 0 auto;
+
+  // border: 1px solid blue;
+
+  @include u.breakpoint(tablet) {
+    width: 76.8rem;
+
+    gap: 0;
+
+    margin-top: 8rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    display: grid;
+    margin: 6.7rem auto 0 auto;
+
+    width: 111rem;
+    height: 134.4rem;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 9.6rem;
+    row-gap: 15.444rem;
+
+    align-items: start;
+  }
+}
+
+.intro {
+  width: 34.3rem;
+  height: 62.1rem;
+
+  background-image: url("../assets/image-hero-landscape.png");
+  background-repeat: no-repeat;
+  background-size: 34.3rem 24rem;
+  background-position: bottom;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  // border: 1px solid green;
+
+  @include u.breakpoint(tablet) {
+    width: 68.9rem;
+    height: 48.2rem;
+
+    background-image: url("../assets/image-hero-portrait.png");
+    background-size: 28.1rem 48.2rem;
+    background-position: right;
+
+    gap: 4rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 82.4rem;
+    height: 60rem;
+
+    background-image: url("../assets/image-hero-portrait@2x.webp");
+    background-size: 35rem 60rem;
+
+    gap: 0;
+  }
+}
+
+.curve_1 {
+  margin-left: 15.4rem;
+
+  @include u.breakpoint(tablet) {
+    margin-left: 22.3rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    margin-left: 28.9rem;
+    width: 28.7rem;
+    height: 3.6rem;
+
+    content: url("../assets/curve1_desktop.svg");
+  }
+}
+
+.intro_heading {
+  @include u.breakpoint(tablet) {
+    margin-top: 4.59rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    margin-top: 4.568rem;
+  }
+}
+
+.intro_heading h1 {
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  letter-spacing: -0.053rem;
+
+  margin-top: 0.832rem;
+
+  @include u.breakpoint(tablet) {
+    width: 49.4rem;
+
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.078rem;
+
+    // margin-top: 1.632rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 63.5rem;
+    height: 15.6rem;
+
+    font-size: u.$XL_font_size;
+    line-height: u.$XL_line_height;
+    letter-spacing: u.$XL_letter_spacing;
+
+    margin-top: 2.132rem;
+  }
+}
+
+.intro > p {
+  font-size: u.$S_font_size;
+  line-height: 2.8rem;
+  letter-spacing: 0.009rem;
+  text-align: left;
+
+  color: var(--dark_grey);
+
+  @include u.breakpoint(tablet) {
+    width: 35rem;
+    height: 8.4rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 35rem;
+    height: 9.6rem;
+
+    font-size: 1.8rem;
+    line-height: 1.8em;
+    letter-spacing: 0.01rem;
+
+    margin-top: 4rem;
+  }
+}
+
+.intro button {
+  @include u.breakpoint(desktop) {
+    margin-top: 5.2rem;
+  }
+}
+
+.stats {
+  height: 31.3rem;
+  width: 34.3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  // border: 1px solid green;
+
+  @include u.breakpoint(tablet) {
+    width: 58rem;
+    height: 8.3rem;
+
+    flex-direction: row;
+
+    margin-top: 8.8rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 19rem;
+    height: 37.5rem;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 10.7rem;
+  }
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 8.3rem;
+
+  @include u.breakpoint(desktop) {
+    align-items: flex-start;
+  }
+}
+
+.stats__figure {
+  font-size: u.$L_font_size;
+  line-height: u.$L_line_height;
+  letter-spacing: u.$L_letter_spacing;
+  font-weight: 700;
+
+  color: var(--blackish_blue);
+}
+
+.stats__subtitle {
+  font-size: u.$S_font_size;
+  line-height: u.$S_line_height;
+  letter-spacing: u.$S_letter_spacing;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: var(--dark_grey);
+}
+
+.quote-wrapper {
+  height: 92.9rem;
+  width: 37.5rem;
+
+  @include u.breakpoint(tablet) {
+    height: 86.5rem;
+    width: 68.9rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 9.2rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    grid-column: 1 / span 2;
+
+    width: 111rem;
+    height: 58.956rem;
+
+    margin: 0;
+
+    display: block;
+  }
+
+  .jeremy {
+    width: 25.2rem;
+    height: 40rem;
+
+    position: relative;
+
+    margin-left: 7.5rem;
+
+    background: url("../assets/pattern-blur.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    @include u.breakpoint(tablet) {
+      margin-right: 5rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 35.981rem;
+      height: 58.956rem;
+
+      margin-left: 12.149rem;
+    }
+  }
+
+  .quote {
+    width: 37.5rem;
+    height: 74.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--blackish_blue);
+
+    border-radius: 1.5rem;
+
+    // border: 1px red solid;
+
+    margin-top: -22.1rem;
+
+    @include u.breakpoint(tablet) {
+      width: 68.9rem;
+      height: 68.4rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 111rem;
+      height: 54.5rem;
+      margin-top: -54.5rem;
+
+      flex-direction: row;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+
+      margin-top: 3.7rem;
+
+      @include u.breakpoint(desktop) {
+        margin-top: 8.8rem;
+
+        align-items: flex-start;
+        margin-left: 5.275rem;
+      }
+
+      &--heading {
+        font-size: 4rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.042rem;
+        font-weight: 400;
+
+        color: var(--white);
+
+        @include u.breakpoint(desktop) {
+          font-size: u.$L_font_size;
+          line-height: u.$L_line_height;
+          letter-spacing: u.$L_letter_spacing;
+        }
+      }
+
+      &--content {
+        width: 34.3rem;
+        height: 16rem;
+
+        font-size: u.$M_font_size;
+        line-height: u.$M_line_height;
+        letter-spacing: 0.009rem;
+        font-weight: 400;
+        text-align: center;
+
+        color: var(--beige);
+
+        @include u.breakpoint(tablet) {
+          width: 57.3rem;
+          height: 9.6rem;
+        }
+
+        @include u.breakpoint(desktop) {
+          width: 36rem;
+          height: 17.5rem;
+
+          font-size: 2rem;
+          line-height: 3.5rem;
+          letter-spacing: 0.01em;
+
+          text-align: center;
+
+          text-align: left;
+        }
+      }
+
+      &--3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 19rem;
+        height: 5.8rem;
+
+        @include u.breakpoint(desktop) {
+          align-items: flex-start;
+        }
+      }
+
+      &--signature {
+        font-size: u.$M_font_size;
+        line-height: u.$M_line_height;
+        letter-spacing: -0.018rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+
+        color: var(--beige);
+      }
+
+      &--jobTitle {
+        font-size: u.$S_font_size;
+        line-height: u.$S_line_height;
+        letter-spacing: u.$S_letter_spacing;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.curve_2 {
+  margin-top: 26.1rem;
+  margin-left: 16.3rem;
+
+  @include u.breakpoint(tablet) {
+    margin-left: 32rem;
+  }
+  @include u.breakpoint(desktop) {
+    margin-left: 51.7rem;
+    margin-top: 16.115rem;
+  }
+}
+
+.footer {
+  width: 37.5rem;
+  height: 42rem;
+
+  display: flex;
+  justify-content: center;
+
+  @include u.breakpoint(tablet) {
+    width: 68.9rem;
+    height: 3.2rem;
+
+    margin-top: 7.2rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 110.9rem;
+    height: 3.2rem;
+
+    margin-top: 9.5rem;
+  }
+
+  &__items {
+    margin-top: 5.6rem;
+
+    width: 12.8rem;
+    height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: static;
+
+    // border: 1px solid black;
+
+    @include u.breakpoint(tablet) {
+      margin: 0;
+
+      width: 68.9rem;
+      height: 3.2rem;
+
+      flex-direction: row;
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 110.9rem;
+      height: 3.2rem;
+    }
+
+    &--logo {
+      width: 8.1rem;
+      height: 3.2rem;
+    }
+
+    &--copyright {
+      font-size: u.$footer_font_size;
+      font-weight: 400;
+      line-height: u.$footer_line_height;
+      letter-spacing: 0.008rem;
+
+      color: var(--dark_grey);
+
+      @include u.breakpoint(tablet) {
+        margin-left: 4rem;
+      }
+    }
+
+    &--socialMedia {
+      width: 11.6rem;
+      height: 2rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
