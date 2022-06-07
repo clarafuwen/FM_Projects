@@ -1,0 +1,42 @@
+@use "../util" as u;
+
+//radio buttons to switch among timeframes
+.radioButtons {
+  display: flex;
+
+  font-size: u.$timeframe_font_size;
+  font-weight: u.$timeframe_font_wt;
+  color: var(--highlight_blue);
+
+  width: 32.7rem;
+
+  @include u.breakpoint(desktop) {
+    width: 6.8rem;
+    height: 10.6rem;
+
+    margin-left: 3.2rem;
+
+    flex-direction: column;
+
+    gap: 2.1rem;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  width: 10.9rem;
+  text-align: center;
+
+  @include u.breakpoint(desktop) {
+    text-align: left;
+    cursor: pointer;
+  }
+}
+
+//when a button is checked, highlight that button
+input[type="radio"]:checked + label {
+  color: white;
+}

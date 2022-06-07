@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/dist/styles.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid">
+      <div class="grid__item grid__item--profile">
+        <div class="profile">
+          <div class="profile__userInfo">
+            <img src="../images/image-jeremy.png" alt="jeremy" />
+            <div class="profile__userInfo--wrapper">
+              <span>Report for</span>
+              <h1 class="profile__userInfo--name">Jeremy Robson</h1>
+            </div>
+          </div>
+
+          <div class="profile__timeframes radioButtons">
+            <input
+              class="timeframe"
+              type="radio"
+              id="daily"
+              name="timeframe"
+              value="daily"
+            />
+            <label for="daily">Daily</label>
+
+            <input
+              class="timeframe"
+              type="radio"
+              id="weekly"
+              name="timeframe"
+              value="weekly"
+              checked
+            />
+            <label for="weekly">Weekly</label>
+
+            <input
+              class="timeframe"
+              type="radio"
+              id="monthly"
+              name="timeframe"
+              value="monthly"
+            />
+            <label for="monthly">Monthly</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--work">
+        <div class="block">
+          <div class="block__title">
+            <div class="block__title--heading"></div>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="block__content">
+            <div class="block__content--current"></div>
+            <div class="block__content--history"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--play">
+        <div class="block">
+          <div class="block__title">
+            <div class="block__title--heading"></div>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="block__content">
+            <div class="block__content--current"></div>
+            <div class="block__content--history"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--study">
+        <div class="block">
+          <div class="block__title">
+            <div class="block__title--heading"></div>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="block__content">
+            <div class="block__content--current"></div>
+            <div class="block__content--history"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--exercise">
+        <div class="block">
+          <div class="block__title">
+            <div class="block__title--heading"></div>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="block__content">
+            <div class="block__content--current"></div>
+            <div class="block__content--history"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--social">
+        <div class="block">
+          <div class="block__title">
+            <div class="block__title--heading"></div>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="block__content">
+            <div class="block__content--current"></div>
+            <div class="block__content--history"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--selfCare">
+        <div class="block">
+          <div class="block__title">
+            <div class="block__title--heading"></div>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="block__content">
+            <div class="block__content--current"></div>
+            <div class="block__content--history"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

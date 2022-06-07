@@ -1,0 +1,121 @@
+@use "../util" as u;
+
+//the entire main is a grid with different
+//grid styles for mobile and desktop each
+//default 1-column style for mobile
+.grid {
+  display: grid;
+  margin: 8.1rem auto;
+  width: 32.7rem;
+  height: 123.5rem;
+
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+
+  //4-col/2-row for desktop grid
+  @include u.breakpoint(desktop) {
+    width: 111rem;
+    height: 51.8rem;
+
+    margin: 25.3rem auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  &__item {
+    display: block;
+    width: 32.7rem;
+    height: 16rem;
+
+    border: none;
+    border-radius: 1.5rem;
+
+    color: #ffffff;
+
+    background-color: var(--dark_blue);
+
+    @include u.breakpoint(desktop) {
+      width: 25.5rem;
+      height: 24.4rem;
+    }
+
+    &--profile {
+      width: 32.7rem;
+      height: 20.3rem;
+
+      @include u.breakpoint(desktop) {
+        grid-row: 1 / span 2;
+
+        height: 51.8rem;
+        width: 25.5rem;
+      }
+    }
+
+    &--work {
+      background-color: var(--orange);
+      background-image: url("../images/icon-work.svg");
+      background-repeat: no-repeat;
+      background-position: top -1rem left 23.16rem;
+
+      @include u.breakpoint(desktop) {
+        background-position: top -1rem left 16rem;
+      }
+    }
+
+    &--play {
+      background-color: var(--blue_play);
+      background-image: url("../images/icon-play.svg");
+      background-repeat: no-repeat;
+      background-position: top -0.5rem left 23.16rem;
+
+      @include u.breakpoint(desktop) {
+        background-position: top -0.5rem left 16rem;
+      }
+    }
+
+    &--study {
+      background-color: var(--red);
+      background-image: url("../images/icon-study.svg");
+      background-repeat: no-repeat;
+      background-position: top -0.5rem left 23.16rem;
+
+      @include u.breakpoint(desktop) {
+        background-position: top -1rem left 16rem;
+      }
+    }
+
+    &--exercise {
+      background-color: var(--green);
+      background-image: url("../images/icon-exercise.svg");
+      background-repeat: no-repeat;
+      background-position: top -0.2rem left 23rem;
+
+      @include u.breakpoint(desktop) {
+        background-position: top -0.2rem left 16rem;
+      }
+    }
+
+    &--social {
+      background-color: var(--purple);
+      background-image: url("../images/icon-social.svg");
+      background-repeat: no-repeat;
+      background-position: top -1.5rem left 24rem;
+
+      @include u.breakpoint(desktop) {
+        background-position: top -1.5rem left 17rem;
+      }
+    }
+
+    &--selfCare {
+      background-color: var(--yellow);
+      background-image: url("../images/icon-self-care.svg");
+      background-repeat: no-repeat;
+      background-position: top -1rem left 25rem;
+
+      @include u.breakpoint(desktop) {
+        background-position: top -1rem left 17rem;
+      }
+    }
+  }
+}

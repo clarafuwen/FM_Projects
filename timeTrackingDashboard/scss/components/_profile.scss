@@ -1,0 +1,97 @@
+@use "../util" as u;
+
+//the first grid-items: profile has a different style than the rest 6 grid-items
+//profile contais userInfo and timeframe buttons
+
+.profile {
+  display: block;
+  width: 32.7rem;
+  height: 20.3rem;
+
+  border: none;
+  border-radius: 1.5rem;
+
+  background-color: var(--dark_blue);
+
+  @include u.breakpoint(desktop) {
+    width: 25.5rem;
+    height: 51.8rem;
+  }
+
+  &__userInfo {
+    display: flex;
+    align-items: center;
+
+    height: 13.3rem;
+    background-color: var(--blue);
+    border-radius: inherit;
+
+    color: var(--pale_blue);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    @include u.breakpoint(desktop) {
+      width: 25.5rem;
+      height: 35.4rem;
+
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    img {
+      width: 6.6rem;
+      height: 6.6rem;
+
+      border: 0.3rem solid #ffffff;
+      border-radius: 50%;
+
+      margin-left: 3.2rem;
+
+      @include u.breakpoint(desktop) {
+        width: 8rem;
+        height: 8rem;
+
+        margin-top: 3.7rem;
+      }
+    }
+
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+
+      margin-left: 2rem;
+
+      @include u.breakpoint(desktop) {
+        gap: 0.3rem;
+
+        width: 13.9rem;
+        height: 11.6rem;
+
+        margin-top: 4.3rem;
+        margin-left: 3.2rem;
+      }
+    }
+
+    &--name {
+      font-size: u.$mobile_userName_font_size;
+      font-weight: u.$mobile_userName_font_wt;
+      color: #ffffff;
+
+      @include u.breakpoint(desktop) {
+        font-size: u.$desktop_userName_font_size;
+        font-weight: u.$desktop_userName_font_wt;
+      }
+    }
+  }
+
+  &__timeframes {
+    color: var(--highlight_blue);
+    margin-top: 2.4rem;
+
+    @include u.breakpoint(desktop) {
+      margin-top: 2.6rem;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@use "../util/" as u;
+
+//the block content within each grid-item
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 32.7rem;
+  height: 12.2rem;
+
+  background-color: var(--dark_blue);
+
+  margin-top: 3.8rem;
+
+  border-radius: 1.5rem;
+
+  @include u.breakpoint(desktop) {
+    width: 25.5rem;
+    height: 19.9rem;
+
+    align-items: flex-start;
+
+    margin-top: 4.5rem;
+  }
+
+  &__title {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 27.9rem;
+    // height: 2.1rem;
+    margin-top: 2.8rem;
+
+    @include u.breakpoint(desktop) {
+      width: 19rem;
+      height: 2.2rem;
+
+      margin-top: 2.9rem;
+      margin-left: 3.2rem;
+
+      svg:hover {
+        cursor: pointer;
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    &--heading {
+      font-size: u.$title_font_size;
+      font-weight: u.$title_font_wt;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 27.9rem;
+
+    margin-top: 0.6rem;
+
+    @include u.breakpoint(desktop) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      margin-left: 3.2rem;
+      margin-top: 2.4rem;
+    }
+
+    &--current {
+      font-size: u.$mobile_content_font_size;
+      font-weight: u.$mobile_content_font_wt;
+
+      @include u.breakpoint(desktop) {
+        font-size: u.$desktop_content_font_size;
+        font-weight: u.$desktop_content_font_wt;
+      }
+    }
+
+    &--history {
+      font-size: u.$history_font_size;
+      font-weight: u.$history_font_wt;
+
+      color: var(--pale_blue);
+      @include u.breakpoint(desktop) {
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
+
+.block:hover {
+  @include u.breakpoint(desktop) {
+    cursor: pointer;
+    background-color: var(--on_hover);
+  }
+}

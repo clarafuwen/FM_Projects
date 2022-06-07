@@ -1,0 +1,30 @@
+@use "../util" as u;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: u.$font;
+
+  width: 37.5rem;
+  height: 146.9rem;
+
+  background-color: var(--very_dark_blue);
+
+  color: #ffffff;
+
+  @include u.breakpoint(desktop) {
+    width: 144rem;
+    height: 102.4rem;
+  }
+}
