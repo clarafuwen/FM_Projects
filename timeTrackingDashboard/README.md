@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop_design]("https://github.com/clarafuwen/FM_Projects/blob/b40faea5633333b0cad8d86085faf68cb2e31330/timeTrackingDashboard/design/desktop-design.jpg")
+![desktop_design](https://github.com/clarafuwen/FM_Projects/blob/90fb037e5fbca0564d3c86c6edbfdde501f0a6fe/timeTrackingDashboard/design/desktop-design.jpg)
 
 ### Links
 
