@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop_design]("/design/desktop-design.jpg")
+![desktop_design]("https://github.com/clarafuwen/FM_Projects/blob/b40faea5633333b0cad8d86085faf68cb2e31330/timeTrackingDashboard/design/desktop-design.jpg")
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:(https://github.com/clarafuwen/FM_Projects/tree/main/timeTrackingDashboard)
+- Live Site URL: (https://629fb0287b5b5a154aa05ae7--meek-youtiao-bbf1e2.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-It seems this is the perfect project to practice CSS Grid and Sass/SCSS. The heavylifting is done by individual components, therefore, the boilerplate.scss is super light-weighted. I also find it easy to modify the values of parameters since most of them are grouped in their specific parttials...
+It seems this is the perfect project to practice CSS Grid and Sass/SCSS. The heavy-lifting is done by individual components, therefore, the boilerplate.scss is super light-weighted. I also find it easy to modify the values of parameters since most of them are grouped in their specific partials...
 
 ### Useful resources
 
@@ -54,5 +54,5 @@ It seems this is the perfect project to practice CSS Grid and Sass/SCSS. The hea
 
 ## Author
 
-- Website - [Wen Clara Fu](https://www.your-site.com)
+- Website - [Wen Clara Fu](https://github.com/clarafuwen/FM_Projects)
 - Frontend Mentor - [@clarafuwen](https://www.frontendmentor.io/profile/clarafuwen)
