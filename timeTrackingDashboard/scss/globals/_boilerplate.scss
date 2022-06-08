@@ -23,6 +23,8 @@ body {
 
   color: #ffffff;
 
+  margin: 0 auto;
+
   @include u.breakpoint(desktop) {
     width: 144rem;
     height: 102.4rem;

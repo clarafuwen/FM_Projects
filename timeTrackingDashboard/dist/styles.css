@@ -32,6 +32,7 @@ body {
   height: 146.9rem;
   background-color: var(--very_dark_blue);
   color: #ffffff;
+  margin: 0 auto;
 }
 @media (min-width: 90rem) {
   body {
