@@ -86,13 +86,25 @@
           <picture class="jeremy__picture">
             <source
               media="(min-width: 768px)"
-              srcset="../assets/image-jeremy-small.webp"
+              srcset="
+                ../assets/image-jeremy-small.webp,
+                ../assets/image-jeremy-small@2x.png 2x
+              "
             />
             <source
               media="(min-width: 1440px)"
-              srcset="../assets/image-jeremy-large@2x.webp"
+              srcset="
+                ../assets/image-jeremy-large.webp    1x,
+                ../assets/image-jeremy-large@2x.webp 2x
+              "
             />
-            <img src="../assets/image-jeremy-small.webp" alt="jeremy" />
+            <img
+              src="../assets/image-jeremy-small.png"
+              srcset="../assets/image-jeremy-small@2x.png 2x"
+              width="252"
+              height="402"
+              alt="jeremy"
+            />
           </picture>
         </div>
 
