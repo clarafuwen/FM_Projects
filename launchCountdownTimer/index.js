@@ -21,7 +21,7 @@ const flipTimeBottom = {
 let days = 8 * 1000 * 60 * 60 * 24;
 let hours = 23 * 1000 * 60 * 60;
 let minutes = 55 * 1000 * 60;
-let seconds = 42 * 1000;
+let seconds = 43 * 1000;
 
 let days_pre = 8,
   hours_pre = 23,

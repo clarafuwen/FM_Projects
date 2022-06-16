@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop_screenshot](./screenshot.jpg)
+![desktop_screenshot](https://github.com/clarafuwen/FM_Projects/blob/d98d4208d3db04b7c3ecba264666b7dcffd54888/launchCountdownTimer/screenshot_desktop.png)
 
 ### Links
 
 - Solution URL: [github](https://your-solution-url.com)
-- Live Site URL: [netlify](https://your-live-site-url.com)
+- Live Site URL: [netlify](https://majestic-crostata-007fbf.netlify.app/)
 
 ## My process
 
