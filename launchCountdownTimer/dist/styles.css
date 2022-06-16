@@ -27,7 +27,7 @@ body {
   background-size: 144rem auto, 144rem auto;
   background-repeat: no-repeat, no-repeat;
   background-position: right bottom, top;
-  background-color: var(--black-blue);
+  background-color: var(--very-dark-blue);
   width: 37.5rem;
   height: 66.7rem;
   display: flex;
