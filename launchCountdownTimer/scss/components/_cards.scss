@@ -1,0 +1,199 @@
+@use "../util/" as u;
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+
+  width: 32.5rem;
+  height: 9rem;
+
+  margin-top: 6rem;
+
+  // border: 1px solid aqua;
+
+  @include u.breakpoint(desktop) {
+    margin-top: 11.5rem;
+
+    width: 68.8rem;
+    height: 18.6rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 6.7rem;
+    height: 9rem;
+
+    // border: 1px solid white;
+
+    @include u.breakpoint(desktop) {
+      width: 15rem;
+      height: 18.6rem;
+    }
+  }
+
+  &__item {
+    width: 6.8rem;
+    height: 6.6rem;
+
+    color: var(--soft-red);
+    font-size: 3.3rem;
+
+    position: relative;
+
+    @include u.breakpoint(desktop) {
+      width: 15rem;
+      height: 14rem;
+
+      font-size: 8rem;
+    }
+
+    // border: 0.1rem solid white;
+
+    //display a half of the card
+    &--top,
+    &--bottom {
+      width: 6.7rem;
+      height: 0.5em;
+      padding: 0.5em;
+      line-height: 1;
+
+      overflow: hidden;
+
+      position: relative;
+
+      @include u.breakpoint(desktop) {
+        width: 15rem;
+        height: 0.9em;
+        padding: 0.38em;
+        line-height: 1;
+      }
+    }
+
+    &--top,
+    &--topFlip {
+      border-top-left-radius: 0.4rem;
+      border-top-right-radius: 0.4rem;
+
+      background-color: var(--dark-blue);
+      position: relative;
+
+      display: flex;
+
+      justify-content: center;
+
+      @include u.breakpoint(desktop) {
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+      }
+    }
+
+    //create the bottom half of the card
+    &--bottom,
+    &--bottomFlip {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      border-bottom-left-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;
+
+      box-shadow: 0.5rem 0.3rem 0.3rem black;
+
+      background-color: var(--dark-blue);
+
+      position: relative;
+
+      @include u.breakpoint(desktop) {
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+
+        box-shadow: 0.5rem 0.5rem 0.3rem black;
+      }
+    }
+
+    &--title {
+      font-size: 0.7rem;
+      letter-spacing: 0.3rem;
+
+      color: var(--grayish-blue);
+
+      margin-top: 1rem;
+
+      @include u.breakpoint(desktop) {
+        font-size: 1.5rem;
+        letter-spacing: 0.45rem;
+
+        margin-top: 2.5rem;
+      }
+    }
+
+    //for animation purposes
+    &--topFlip {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      // animation: flip-top 250ms ease-in;
+      transform-origin: bottom;
+    }
+
+    &--bottomFlip {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      // animation: flip-bottom 250ms ease-in-out 250ms;
+      transform-origin: top;
+    }
+  }
+}
+
+//styles for rounded inverted radius in the middile line of the card
+.bottom {
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100%;
+  background-color: var(--very-dark-blue);
+  bottom: -0.3rem;
+
+  @include u.breakpoint(desktop) {
+    width: 1.1rem;
+    height: 1.1rem;
+
+    bottom: -0.45rem;
+  }
+}
+
+.top {
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100%;
+  background-color: var(--very-dark-blue);
+  top: -0.3rem;
+
+  @include u.breakpoint(desktop) {
+    width: 1.1rem;
+    height: 1.1rem;
+
+    top: -0.45rem;
+  }
+}
+
+.left {
+  position: absolute;
+  left: -0.3rem;
+  @include u.breakpoint(desktop) {
+    left: -0.4rem;
+  }
+}
+
+.right {
+  position: absolute;
+  right: -0.3rem;
+  @include u.breakpoint(desktop) {
+    right: -0.4rem;
+  }
+}

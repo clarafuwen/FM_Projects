@@ -1,0 +1,29 @@
+@use "../util" as u;
+
+.title {
+  margin-top: 14rem;
+  // margin-left: 5rem;
+
+  color: var(--white);
+
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  text-align: center;
+
+  width: 27rem;
+  height: 4.5rem;
+
+  // border: 1px solid white;
+
+  @include u.breakpoint(desktop) {
+    margin-top: 13rem;
+
+    font-size: 2rem;
+    letter-spacing: 0.87rem;
+
+    width: 44rem;
+    height: 2rem;
+  }
+}

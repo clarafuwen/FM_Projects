@@ -1,0 +1,52 @@
+@use "../util/" as u;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+
+  font-family: "Red Hat Text", sans-serif;
+
+  background: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");
+
+  background-size: 144rem auto, 144rem auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, top;
+
+  background-color: var(--black-blue);
+
+  width: 37.5rem;
+  height: 66.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // border: 1px solid white;
+
+  @include u.breakpoint(desktop) {
+    width: 144rem;
+    height: 80rem;
+
+    background-position: bottom, top;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+}

@@ -1,0 +1,38 @@
+@use "../util/" as u;
+
+.footer {
+  margin-top: 26rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // border: 1px solid white;
+
+  @include u.breakpoint(desktop) {
+    margin-top: 25rem;
+  }
+
+  &__social {
+    width: 13.8rem;
+    height: 2.4rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    @include u.breakpoint(desktop) {
+      svg:hover path {
+        fill: var(--soft-red);
+      }
+    }
+  }
+
+  &__attribution {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
