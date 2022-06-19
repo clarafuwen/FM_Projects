@@ -82,12 +82,8 @@ closeModal.addEventListener("click", complete);
 // close the mobile nav and render desktop layout
 window.addEventListener("resize", () => {
   if (window.innerWidth > 500) {
-    nav.classList.add("hidden");
     overlay.classList.add("hidden");
-    menuIcons.forEach((icon) => {
-      icon.classList.add("hidden");
-    });
-    hamburger_icon.classList.remove("hidden");
+    toggleIcons.classList.add("hidden");
   } else if (window.innerWidth <= 500) {
     console.log("mobile");
     if (hamburger_icon.classList.contains("hidden")) {
@@ -124,7 +120,10 @@ function resetRadioButton() {
 //update pledge total amount and backers number and progress bar percentage
 function updateStats() {
   let rewardID = selectedID + "-pledge";
+  let placeholder = Number(document.getElementById(rewardID).placeholder);
+  console.log(placeholder);
   let amount = Number(document.getElementById(rewardID).value);
+  amount = amount === 0 ? placeholder : amount;
   console.log(amount);
   pledgeTotal += amount;
   backNum++;
