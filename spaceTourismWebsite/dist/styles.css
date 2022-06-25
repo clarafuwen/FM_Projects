@@ -10,30 +10,41 @@
   }
 }
 
-.home_button {
-  position: relative;
+.home_button,
+.home_button:hover,
+.home_button:active {
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
   border: none;
   background-color: var(--white);
+  color: var(--black);
   margin-top: 8.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 48rem) {
-  .home_button {
+  .home_button,
+.home_button:hover,
+.home_button:active {
     height: 24.2rem;
     width: 24.2rem;
     margin-top: 15.6rem;
   }
 }
 @media (min-width: 90rem) {
-  .home_button {
+  .home_button,
+.home_button:hover,
+.home_button:active {
     height: 27.4rem;
     width: 27.4rem;
     margin: 0;
     cursor: pointer;
   }
-  .home_button:hover {
+  .home_button:hover,
+.home_button:hover:hover,
+.home_button:active:hover {
     box-shadow: 0 0 0 8rem rgba(255, 255, 255, 0.1);
   }
 }

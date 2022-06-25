@@ -1,7 +1,9 @@
 @use "../util/" as u;
 
-.home_button {
-  position: relative;
+.home_button,
+.home_button:hover,
+.home_button:active {
+  // position: relative;
   height: 15rem;
   width: 15rem;
 
@@ -9,7 +11,13 @@
   border: none;
   background-color: var(--white);
 
+  color: var(--black);
+
   margin-top: 8.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include u.breakpoint(tablet) {
     height: 24.2rem;
