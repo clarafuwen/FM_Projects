@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_desktop](./screenshot.jpg)
+![screenshot_desktop](https://github.com/clarafuwen/FM_Projects/blob/7d567c88716d7dddf9afd03e306760b0e67d7f61/spaceTourismWebsite/screencapture-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/clarafuwen/FM_Projects/tree/main/spaceTourismWebsite)
+- Live Site URL: [netlify](https://graceful-pegasus-cd3025.netlify.app/)
 
 ## My process
 
