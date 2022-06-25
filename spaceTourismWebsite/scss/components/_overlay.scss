@@ -1,0 +1,16 @@
+@use "../util/" as u;
+.overlay {
+  width: 25.4rem;
+  height: 66.7rem;
+
+  backdrop-filter: blur(4rem);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}

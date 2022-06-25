@@ -1,0 +1,171 @@
+@use "../util/" as u;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+
+$barlow: "Barlow Condensed", sans-serif;
+$bellefair: "Bellefair", serif;
+
+h1,
+h2,
+.heading3,
+.heading4 {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 10rem;
+  text-align: center;
+
+  color: var(--white);
+
+  @include u.breakpoint(tablet) {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+}
+
+h2 {
+  font-size: 5.6rem;
+  color: (--white);
+
+  @include u.breakpoint(tablet) {
+    font-size: 8rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    font-size: 10rem;
+    line-height: normal;
+  }
+}
+
+.heading3 {
+  font-size: 2.4rem;
+
+  @include u.breakpoint(tablet) {
+    font-size: 4rem;
+  }
+  @include u.breakpoint(desktop) {
+    font-size: 5.6rem;
+  }
+}
+
+.heading4 {
+  font-size: 1.6rem;
+
+  @include u.breakpoint(tablet) {
+    font-size: 2.4rem;
+  }
+  @include u.breakpoint(desktop) {
+    font-size: 3.2rem;
+  }
+}
+
+.prompt_subheading {
+  font-family: $barlow;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+
+  color: var(--pale-blue);
+
+  text-transform: uppercase;
+
+  @include u.breakpoint(tablet) {
+    font-size: 2rem;
+    letter-spacing: 0.338rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    font-size: 2.8rem;
+    letter-spacing: 0.475rem;
+  }
+}
+
+.subheading1 {
+  font-family: $bellefair;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.subheading2 {
+  font-family: $barlow;
+  font-size: 1.4rem;
+  letter-spacing: 0.236rem;
+  text-transform: uppercase;
+
+  @include u.breakpoint(tablet) {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+  }
+}
+
+.subheading2-stats {
+  font-family: $barlow;
+  font-size: 1.4rem;
+  letter-spacing: 0.236rem;
+  text-transform: uppercase;
+}
+
+.nav__text {
+  font-family: $barlow;
+  font-size: 1.6rem;
+  letter-spacing: 0.27rem;
+
+  text-transform: uppercase;
+
+  color: var(--white);
+
+  @include u.breakpoint(tablet) {
+    font-size: 1.4rem;
+    letter-spacing: 0.236rem;
+    line-height: 1.7rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+    // line-height: auto;
+  }
+
+  &--num {
+    font-weight: 700;
+  }
+}
+
+.body_text {
+  font-family: $barlow;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.122rem;
+  // font-weight: 400;
+
+  text-align: center;
+
+  color: var(--pale-blue);
+
+  // border: 1px solid white;
+
+  @include u.breakpoint(tablet) {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.16rem;
+  }
+}
+
+.home_button {
+  font-family: $bellefair;
+  font-size: 2rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+
+  @include u.breakpoint(tablet) {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+  }
+}

@@ -1,0 +1,169 @@
+@use "../util" as u;
+
+//styles for main in home page
+.main__home {
+  margin-top: 4.8rem;
+
+  width: 32.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include u.breakpoint(tablet) {
+    width: 76.8rem;
+
+    margin-top: 8rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    margin-left: 16.5rem;
+    margin-top: 25.1rem;
+
+    height: 38.2rem;
+    width: 111rem;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &--wrapper {
+    width: 32.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    @include u.breakpoint(tablet) {
+      gap: 2.4rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 45rem;
+      height: 38.2rem;
+
+      align-items: flex-start;
+    }
+  }
+
+  &--prompt {
+    @include u.breakpoint(desktop) {
+      width: 39rem;
+      height: 3.4rem;
+    }
+  }
+
+  &--content {
+    width: 32.7rem;
+    height: 12.5rem;
+
+    @include u.breakpoint(tablet) {
+      width: 44rem;
+      height: 11.2rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 46rem;
+      height: 12.8rem;
+      text-align: left !important;
+    }
+  }
+
+  &--heading {
+    width: 32.7rem;
+    height: 10rem;
+    @include u.breakpoint(tablet) {
+      width: 44.5rem;
+      height: 15rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      height: 17.2rem;
+    }
+  }
+}
+
+//styles for main in pages other than home page
+.main {
+  margin-top: 2.4rem;
+
+  width: 32.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // border: 1px solid white;
+
+  @include u.breakpoint(tablet) {
+    margin-top: 1.3em;
+    width: 76.8rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    display: block;
+
+    &__d {
+      margin-top: 17.4em;
+      margin-left: 23rem;
+      // margin-bottom: 11.2rem;
+
+      width: 104.7rem;
+      height: 47.2rem;
+
+      display: block;
+    }
+
+    &__c {
+      margin-top: 0;
+      margin-left: 16.55em;
+
+      min-width: 113.7rem;
+      height: 76.4rem;
+
+      // overflow: hidden;
+      // border: 1px solid yellow;
+    }
+
+    &__t {
+      width: 127.5rem;
+      height: 52.7rem;
+
+      margin-top: 13.6rem;
+      margin-left: 16.5rem;
+    }
+  }
+
+  &__prompt {
+    width: auto;
+    height: 1.9rem;
+
+    display: flex;
+    gap: 1.8rem;
+
+    color: var(--white) !important;
+
+    @include u.breakpoint(tablet) {
+      position: absolute;
+      left: 3.85rem;
+      top: 13.6rem;
+
+      gap: 1.6rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      position: absolute;
+      left: 16.65rem;
+      top: 21.2rem;
+
+      gap: 2.8rem;
+    }
+
+    &--number {
+      opacity: 0.2;
+      font-weight: 700;
+    }
+  }
+}

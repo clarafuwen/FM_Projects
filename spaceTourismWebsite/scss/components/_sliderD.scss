@@ -1,0 +1,213 @@
+@use "../util/" as u;
+
+//slider styles used in destination page
+.sliderD {
+  width: 32.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include u.breakpoint(tablet) {
+    width: 57.3rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 104.7rem;
+    height: 47.2rem;
+
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__img {
+    margin-top: 3.2rem;
+    // border: 1px solid white;
+
+    width: 17rem;
+    height: 17rem;
+
+    @include u.breakpoint(tablet) {
+      margin-top: 9rem;
+
+      width: 30rem;
+      height: 30rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      margin-bottom: 0.3rem;
+      margin-top: 0;
+
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // border: 1px solid white;
+
+    @include u.breakpoint(desktop) {
+      width: 44.5rem;
+      height: 47.2rem;
+
+      align-items: flex-start;
+    }
+  }
+
+  &__indicator {
+    width: 23.75rem;
+    height: 2.8rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2.6rem;
+
+    @include u.breakpoint(tablet) {
+      width: 28.55rem;
+      height: 3.4em;
+      margin-top: 5.3rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      margin-top: 0;
+      cursor: pointer;
+    }
+
+    // border: 1px solid white;
+
+    &--text {
+      width: 3.6rem;
+      height: 2.8rem;
+
+      color: var(--pale-blue);
+
+      @include u.breakpoint(tablet) {
+        height: 3.4rem;
+        width: fit-content;
+      }
+    }
+    &--text:hover {
+      @include u.breakpoint(desktop) {
+        border-bottom: 0.3rem solid rgb(255, 255, 255, 0.5);
+      }
+    }
+
+    &--active {
+      border-bottom: 0.3rem solid var(--white);
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2rem;
+
+    @include u.breakpoint(tablet) {
+      margin-top: 3.2rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      margin-top: 3.7rem;
+      align-items: flex-start;
+    }
+
+    &--heading {
+      color: var(--white);
+      @include u.breakpoint(tablet) {
+        height: 9.2rem;
+      }
+
+      @include u.breakpoint(desktop) {
+        height: 11.5rem;
+      }
+    }
+
+    &--description {
+      width: 31rem;
+      height: 12.5rem;
+
+      @include u.breakpoint(tablet) {
+        width: 56rem;
+        height: 8.4rem;
+
+        margin-top: 0.8rem;
+      }
+
+      @include u.breakpoint(desktop) {
+        width: 44.4rem;
+        height: 12 8rem;
+        text-align: left !important;
+
+        margin-top: 1.4rem;
+      }
+    }
+  }
+
+  &__stats {
+    margin-top: 3.2rem;
+
+    padding-top: 3.2rem;
+
+    width: 32.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+
+    border-top: 0.1rem solid hsl(231, 15%, 26%);
+
+    @include u.breakpoint(tablet) {
+      margin-top: 4.9rem;
+      padding-top: 2.8rem;
+
+      width: 57.3rem;
+      height: 9rem;
+
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-evenly;
+    }
+
+    @include u.breakpoint(desktop) {
+      margin-top: 9.4rem;
+      padding-top: 2.8rem;
+
+      width: 44.4rem;
+      height: 9rem;
+
+      flex-direction: row;
+      gap: 7.9rem;
+
+      justify-content: left;
+    }
+
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+
+      @include u.breakpoint(desktop) {
+        align-items: flex-start;
+      }
+
+      .sliderD__stats--heading {
+        color: var(--pale-blue);
+      }
+
+      .sliderD__stats--distance,
+      .sliderD__stats--time {
+        color: var(--white);
+      }
+    }
+  }
+}

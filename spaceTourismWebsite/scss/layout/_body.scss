@@ -1,0 +1,104 @@
+@use "../util/" as u;
+
+//styles for body in home page
+.body {
+  width: 37.5rem;
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 37.5rem 66.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-top: 0.001rem solid transparent;
+
+  position: relative;
+
+  // margin: 0 auto;
+
+  @include u.breakpoint(tablet) {
+    width: 76.8rem;
+    height: 102.4rem;
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-size: contain;
+  }
+
+  @include u.breakpoint(desktop) {
+    width: 144rem;
+    height: 90rem;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: 144rem, 90rem;
+
+    display: block;
+  }
+}
+
+//body styles for pages other than home page
+.body__pages {
+  width: 37.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-top: 0.001rem solid transparent;
+  // border: 1px solid yellow;
+
+  &--destination {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+
+    @include u.breakpoint(tablet) {
+      width: 76.8rem;
+      background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 144rem;
+      height: 90rem;
+      background-image: url("../assets/destination/background-destination-desktop.jpg");
+      display: block;
+    }
+  }
+
+  &--crew {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+
+    @include u.breakpoint(tablet) {
+      width: 76.8rem;
+      background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 144rem;
+      height: 90rem;
+      background-image: url("../assets/crew/background-crew-desktop.jpg");
+      display: block;
+    }
+  }
+
+  &--technology {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+
+    @include u.breakpoint(tablet) {
+      width: 76.8rem;
+      background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 144rem;
+      background-image: url("../assets/technology/background-technology-desktop.jpg");
+      display: block;
+    }
+  }
+}

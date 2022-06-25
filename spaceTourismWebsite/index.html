@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <title>Space tourism website | Home</title>
+  </head>
+  <body class="body">
+    <header>
+      <img class="logo" src="/assets/shared/logo.svg" alt="logo" />
+
+      <div class="line"></div>
+      <div class="nav_toggle">
+        <svg
+          class="toggle_icon hamburger"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+        <svg
+          class="toggle_icon close nav_toggle_hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+          </g>
+        </svg>
+      </div>
+      <nav class="nav nav__home">
+        <div class="nav__wrapper">
+          <a class="nav__text nav__text--current" href="#"
+            ><span class="nav__text--num">00</span>
+            <span>Home</span>
+          </a>
+          <a class="nav__text" href="/destination.html"
+            ><span class="nav__text--num">01</span>
+            <span>Destination</span>
+          </a>
+          <a class="nav__text" href="/crew.html"
+            ><span class="nav__text--num">02</span>
+            <span>Crew</span>
+          </a>
+          <a class="nav__text" href="/technology.html"
+            ><span class="nav__text--num">03</span>
+            <span>Technology</span>
+          </a>
+        </div>
+      </nav>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="main__home">
+      <div class="main__home--wrapper">
+        <span class="prompt_subheading main__home--prompt"
+          >So, you want to travel to</span
+        >
+        <h1 class="main__home--heading">Space</h1>
+        <p class="body_text main__home--content">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <button class="home_button">Explore</button>
+    </main>
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>

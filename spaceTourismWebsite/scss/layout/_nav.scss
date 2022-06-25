@@ -1,0 +1,117 @@
+@use "../util/" as u;
+
+.nav {
+  position: absolute;
+
+  left: 15.3rem;
+  top: 11.8rem;
+
+  width: 13rem;
+
+  z-index: 2;
+
+  //nav hides when mobile menu not click
+  //visible when hamburger clicked
+  display: none;
+
+  @include u.breakpoint(tablet) {
+    width: 45rem;
+    height: 9.6rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+
+    left: 31.6rem;
+    top: 0;
+
+    background-color: rgb(255, 255, 255, 0.04);
+    backdrop-filter: blur(1rem);
+  }
+
+  @include u.breakpoint(desktop) {
+    width: auto;
+    height: auto;
+    width: 83rem;
+    height: 9.6rem;
+    left: 55.5rem;
+    top: 0;
+
+    display: block;
+  }
+
+  &__home {
+    @include u.breakpoint(desktop) {
+      top: 0;
+    }
+  }
+
+  &__wrapper {
+    width: 13.2rem;
+    height: 17.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    @include u.breakpoint(tablet) {
+      width: 45rem;
+      height: 9.6rem;
+
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 0;
+
+      left: 31.6rem;
+      top: 0;
+    }
+
+    @include u.breakpoint(desktop) {
+      margin: 3.8rem 16.5rem 3.9rem 12.3rem;
+      width: 54.2rem;
+      height: 1.9rem;
+
+      gap: 4.8rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+
+    @include u.breakpoint(tablet) {
+      height: 9.6rem;
+      width: auto;
+      // border-bottom: 0.3rem solid var(--white);
+
+      @include u.breakpoint(desktop) {
+        cursor: pointer;
+      }
+
+      //display the white underline when active
+      &--current {
+        border-bottom: 0.3rem solid var(--white);
+      }
+    }
+    &--num {
+      @include u.breakpoint(tablet) {
+        display: none;
+      }
+
+      @include u.breakpoint(desktop) {
+        display: block;
+      }
+    }
+  }
+
+  //display the gray underline when hover
+  &__text:hover {
+    @include u.breakpoint(desktop) {
+      border-bottom: 0.3rem solid rgb(255, 255, 255, 0.5);
+    }
+  }
+}

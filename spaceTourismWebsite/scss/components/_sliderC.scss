@@ -1,0 +1,193 @@
+@use "../util/" as u;
+
+//slider styles for crew.html
+.sliderC {
+  width: 32.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-top: 3.2rem;
+
+  position: relative;
+
+  @include u.breakpoint(tablet) {
+    flex-direction: column-reverse;
+    gap: 4rem;
+
+    margin-top: 8.4rem;
+  }
+
+  @include u.breakpoint(desktop) {
+    height: 76.4rem;
+    min-width: 113.7rem;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    gap: 0;
+    margin: 0;
+
+    // border: 1px solid white;
+  }
+
+  &__img {
+    width: 32.7rem;
+    height: 22.3rem;
+
+    object-fit: contain;
+
+    border-bottom: 0.1rem solid hsl(0, 0%, 59%);
+
+    @include u.breakpoint(tablet) {
+      height: 53.2rem;
+      width: auto;
+      border: none;
+    }
+
+    @include u.breakpoint(desktop) {
+      height: 90%;
+      object-fit: none;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      // border: 1px solid red;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+
+    @include u.breakpoint(tablet) {
+      flex-direction: column-reverse;
+
+      height: 23.2rem;
+    }
+
+    @include u.breakpoint(desktop) {
+      width: 62rem;
+      height: 40.6rem;
+
+      gap: 12rem;
+
+      margin-bottom: 10rem;
+
+      align-items: flex-start;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__indicator {
+    width: 8.8rem;
+    height: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    // border: 1px solid white;
+
+    @include u.breakpoint(desktop) {
+      width: 13.2rem;
+      height: 1.5rem;
+      cursor: pointer;
+    }
+
+    &--dot {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+
+      background-color: rgb(255, 255, 255, 17%);
+
+      @include u.breakpoint(desktop) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    &--dot:hover {
+      @include u.breakpoint(desktop) {
+        background-color: rgb(255, 255, 255, 50%);
+      }
+    }
+
+    &--active {
+      background-color: white;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // border: 1px solid white;
+
+    @include u.breakpoint(desktop) {
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &--role {
+      height: 1.8rem;
+      width: auto;
+
+      color: var(--white);
+      opacity: 0.5;
+      z-index: -1;
+
+      @include u.breakpoint(tablet) {
+        width: auto;
+        height: 2.8rem;
+      }
+
+      @include u.breakpoint(desktop) {
+        width: auto;
+        height: 3.7rem;
+      }
+    }
+
+    &--name {
+      color: var(--white);
+      margin-top: 0.8rem;
+
+      @include u.breakpoint(tablet) {
+        width: auto;
+        height: 4.6rem;
+      }
+
+      @include u.breakpoint(desktop) {
+        height: 6.4rem;
+        width: auto;
+        margin-top: 1.5rem;
+      }
+    }
+
+    &--bio {
+      width: 32.7rem;
+      height: auto;
+
+      margin-top: 1.6rem;
+
+      @include u.breakpoint(tablet) {
+        width: 45rem;
+      }
+
+      @include u.breakpoint(desktop) {
+        width: 44.4rem;
+        text-align: left !important;
+
+        margin-top: 2.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <title>Space tourism website | Technology</title>
+  </head>
+  <body class="body__pages body__pages--technology">
+    <header>
+      <img class="logo" src="/assets/shared/logo.svg" alt="logo" />
+
+      <div class="line"></div>
+      <div class="nav_toggle">
+        <svg
+          class="toggle_icon hamburger"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+        <svg
+          class="toggle_icon close nav_toggle_hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+          </g>
+        </svg>
+      </div>
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <a class="nav__text" href="/index.html"
+            ><span class="nav__text--num">00</span>
+            <span>Home</span>
+          </a>
+          <a class="nav__text" href="/destination.html"
+            ><span class="nav__text--num">01</span>
+            <span>Destination</span>
+          </a>
+          <a class="nav__text" href="/crew.html"
+            ><span class="nav__text--num">02</span>
+            <span>Crew</span>
+          </a>
+          <a class="nav__text nav__text--current" href="/technology.html"
+            ><span class="nav__text--num">03</span>
+            <span>Technology</span>
+          </a>
+        </div>
+      </nav>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="main main__t">
+      <div class="main__prompt">
+        <span class="prompt_subheading main__prompt--number">03</span>
+        <div class="prompt_subheading">space launch 101</div>
+      </div>
+
+      <div class="main__slider sliderT">
+        <img
+          src="./assets/technology/image-launch-vehicle-landscape.jpg"
+          alt="technology"
+          class="sliderT__img"
+        />
+        <div class="sliderT__content">
+          <ul class="sliderT__indicator">
+            <li
+              class="heading4 sliderT__indicator--dot sliderT__indicator--active"
+            >
+              <span>1</span>
+            </li>
+            <li class="heading4 sliderT__indicator--dot">
+              <span>2</span>
+            </li>
+            <li class="heading4 sliderT__indicator--dot">
+              <span>3</span>
+            </li>
+          </ul>
+          <div class="sliderT__text">
+            <span class="subheading2 sliderT__text--prompt"
+              >THE TERMINOLOGY…</span
+            >
+            <span class="heading3 sliderT__text--name"></span>
+            <p class="body_text sliderT__text--description"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/js/technology.js"></script>
+  </body>
+</html>

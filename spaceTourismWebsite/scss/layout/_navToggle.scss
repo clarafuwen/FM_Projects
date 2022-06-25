@@ -1,0 +1,14 @@
+@use "../util/" as u;
+
+//hamburger/close icon visible in mobile menu. otherwise invisible
+.nav_toggle {
+  z-index: 2;
+
+  @include u.breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.nav_toggle_hidden {
+  display: none;
+}

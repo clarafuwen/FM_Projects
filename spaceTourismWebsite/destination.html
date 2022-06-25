@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <title>Space tourism website | Destination</title>
+  </head>
+  <body class="body__pages body__pages--destination">
+    <header>
+      <img class="logo" src="/assets/shared/logo.svg" alt="logo" />
+
+      <div class="line"></div>
+      <div class="nav_toggle">
+        <svg
+          class="toggle_icon hamburger"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+        <svg
+          class="toggle_icon close nav_toggle_hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+          </g>
+        </svg>
+      </div>
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <a class="nav__text" href="/index.html"
+            ><span class="nav__text--num">00</span>
+            <span>Home</span>
+          </a>
+          <a class="nav__text nav__text--current" href="/destination.html"
+            ><span class="nav__text--num">01</span>
+            <span>Destination</span>
+          </a>
+          <a class="nav__text" href="/crew.html"
+            ><span class="nav__text--num">02</span>
+            <span>Crew</span>
+          </a>
+          <a class="nav__text" href="/technology.html"
+            ><span class="nav__text--num">03</span>
+            <span>Technology</span>
+          </a>
+        </div>
+      </nav>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="main main__d">
+      <div class="main__prompt">
+        <span class="prompt_subheading main__prompt--number">01</span>
+        <div class="prompt_subheading">Pick your destination</div>
+      </div>
+
+      <div class="main__slider sliderD">
+        <img
+          src="./assets/destination/image-moon.png"
+          alt="moon"
+          class="sliderD__img"
+        />
+        <div class="sliderD__content">
+          <ul class="sliderD__indicator">
+            <li
+              class="subheading2 sliderD__indicator--text sliderD__indicator--active"
+            ></li>
+            <li class="subheading2 sliderD__indicator--text"></li>
+            <li class="subheading2 sliderD__indicator--text"></li>
+            <li class="subheading2 sliderD__indicator--text"></li>
+          </ul>
+          <div class="sliderD__text">
+            <h2 class="sliderD__text--heading">moon</h2>
+            <p class="body_text sliderD__text--description"></p>
+          </div>
+          <div class="sliderD__stats">
+            <div class="sliderD__stats--wrapper">
+              <span class="subheading2-stats sliderD__stats--heading"
+                >Avg. distance</span
+              >
+              <p class="subheading1 sliderD__stats--distance"></p>
+            </div>
+            <div class="sliderD__stats--wrapper">
+              <span class="subheading2-stats sliderD__stats--heading"
+                >Est. travel time</span
+              >
+              <p class="subheading1 sliderD__stats--time"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/js/destination.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+@use "../util" as u;
+
+//all pages share the same header styles
+header {
+  margin-top: 2.4rem;
+
+  width: 32.7rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // border: 1px solid var(--white);
+
+  @include u.breakpoint(tablet) {
+    width: 72.9rem;
+    height: 9.6rem;
+
+    display: block;
+    margin-left: 3.9rem;
+
+    // border: 1px solid yellow;
+  }
+
+  @include u.breakpoint(desktop) {
+    position: relative;
+    width: 138.5rem;
+    height: 9.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 6.4rem;
+    margin-left: 5.5rem;
+    margin-top: 4rem;
+
+    // border: 1px solid yellow;
+  }
+
+  .line {
+    display: none;
+
+    @include u.breakpoint(desktop) {
+      display: block;
+      width: 47.3rem;
+      height: 0.1rem;
+      background-color: var(--white);
+      opacity: 0.25;
+      margin-right: 80rem;
+      z-index: 3;
+    }
+  }
+}
