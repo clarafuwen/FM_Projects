@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot_desktop](./screenshot.jpg)
+![screenshot_desktop](https://github.com/clarafuwen/FM_Projects/blob/eb2c7486b565df8addc4d159b6322cc68a38e023/sunnyside-agency-landing-page-main/ScreenShot_desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Sunny side landing page solution](https://github.com/clarafuwen/FM_Projects/tree/main/sunnyside-agency-landing-page-main)
+- Live Site URL: [netlify](https://magnificent-sunflower-c6c124.netlify.app/)
 
 ## My process
 
@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-A project I get to continue practicing CSS Grid and flexbox along with the clamp function.
+A project I got to continue practicing CSS Grid and flexbox along with the clamp function.
 
 ## Author
 
