@@ -1,0 +1,134 @@
+@use "../util/" as u;
+
+$barlow: "Barlow", sans-serif;
+$fraunces: "Fraunces", serif;
+
+.navigation__link {
+  font-family: $barlow;
+  font-weight: 600;
+  font-size: clamp(u.rem(20), 3.3vw, u.rem(40));
+  letter-spacing: u.rem(-0.14);
+  line-height: u.rem(25);
+  text-decoration: none;
+  @include u.breakpoint(desktop) {
+    font-size: u.rem(18);
+    letter-spacing: u.rem(-0.13);
+  }
+}
+
+.button {
+  font-family: $fraunces;
+  font-weight: 900;
+  font-size: u.rem(15);
+  letter-spacing: u.rem(-0.11);
+  line-height: u.rem(25);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: $fraunces;
+  font-weight: 900;
+  line-height: u.rem(49);
+  font-size: u.rem(40);
+  letter-spacing: u.rem(7.5);
+  text-transform: uppercase;
+
+  @include u.breakpoint(desktop) {
+    line-height: u.rem(58);
+    font-size: u.rem(56);
+    letter-spacing: u.rem(11.5);
+  }
+}
+
+h2 {
+  font-family: $fraunces;
+  font-weight: 700;
+  font-size: u.rem(32);
+  letter-spacing: u.rem(0.23);
+  line-height: u.rem(39);
+  @include u.breakpoint(desktop) {
+    line-height: u.rem(49);
+    font-size: u.rem(40);
+    letter-spacing: u.rem(2);
+  }
+}
+
+.main__item--content {
+  font-family: $barlow;
+  font-weight: 600;
+  font-size: u.rem(18);
+  letter-spacing: u.rem(-0.13);
+  line-height: u.rem(30);
+}
+
+.main__item--link {
+  font-family: $fraunces;
+  font-weight: 700;
+  font-size: u.rem(15);
+  letter-spacing: u.rem(1);
+  line-height: u.rem(25);
+  text-transform: uppercase;
+}
+
+.main__item--title2 {
+  font-family: $fraunces;
+  font-weight: 700;
+  font-size: u.rem(28);
+  letter-spacing: u.rem(-0.2);
+  line-height: u.rem(35);
+  text-transform: capitalize;
+}
+
+.main__item--content2 {
+  font-family: $barlow;
+  font-weight: 600;
+  font-size: u.rem(16);
+  letter-spacing: u.rem(-0.11);
+  line-height: u.rem(27);
+}
+
+.card__heading {
+  font-family: $fraunces;
+  font-weight: 700;
+  line-height: (u.rem(20));
+  font-size: u.rem(16);
+  letter-spacing: u.rem(4);
+  text-transform: uppercase;
+  @include u.breakpoint(desktop) {
+    line-height: (u.rem(25));
+    font-size: u.rem(20);
+    letter-spacing: u.rem(5);
+  }
+}
+
+.card__testimonianl {
+  font-family: $barlow;
+  font-weight: 600;
+  font-size: u.rem(18);
+  letter-spacing: u.rem(-0.13);
+  line-height: u.rem(32);
+}
+
+.card__name {
+  font-family: $fraunces;
+  font-weight: 700;
+  font-size: u.rem(18);
+  letter-spacing: u.rem(-0.13);
+  line-height: u.rem(22);
+}
+
+.card__title {
+  font-family: $barlow;
+  font-weight: 600;
+  font-size: u.rem(14);
+  letter-spacing: u.rem(-0.1);
+  line-height: u.rem(25);
+}
+
+.footer__navigation--link {
+  font-family: $barlow;
+  font-weight: 600;
+  font-size: u.rem(18);
+  letter-spacing: u.rem(-0.13);
+  line-height: u.rem(25);
+}

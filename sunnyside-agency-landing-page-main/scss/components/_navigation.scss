@@ -1,0 +1,116 @@
+@use "../util/" as u;
+
+/***************************************/
+/* navigation styles                   */
+/* *************************************/
+
+.navigation {
+  width: 88%;
+
+  position: absolute;
+  top: u.rem(86);
+  right: 0;
+
+  @include u.breakpoint(desktop) {
+    position: static;
+
+    display: inline-block;
+  }
+
+  //hide navigation when chosen invisible
+  //toggle to true when hamburger clicked
+  &[data-visible="false"] {
+    display: none;
+    transition: 250ms ease-out;
+
+    @include u.breakpoint(desktop) {
+      display: flex;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(u.rem(32), 7vw, u.rem(80));
+
+    aspect-ratio: 1;
+
+    position: relative;
+
+    @include u.breakpoint(desktop) {
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      gap: u.rem(47);
+      margin: 0;
+      aspect-ratio: unset;
+    }
+  }
+
+  /***************************************/
+  /* styles for dropdown menu background */
+  /* *************************************/
+
+  //style for the triangle (tip of the dropdown menu
+
+  &__wrapper::before {
+    border: 0;
+    @include u.breakpoint-down(mobile) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 6%;
+      width: 0;
+      height: 0;
+      border-left: u.rem(24) solid transparent;
+      border-bottom: u.rem(24) solid hsl(var(--white));
+    }
+  }
+
+  //style for the white rectanglebackground
+  &__wrapper::after {
+    background-color: none;
+    @include u.breakpoint-down(mobile) {
+      content: "";
+      position: absolute;
+      top: u.rem(24);
+      right: 6%;
+      height: 100%;
+
+      width: 100%;
+      background-color: hsl(var(--white));
+    }
+  }
+
+  &__link {
+    position: static;
+    color: hsl(var(--gray));
+    margin-right: 12%;
+    z-index: 5;
+    @include u.breakpoint(desktop) {
+      margin: 0;
+      padding: 0;
+      color: hsl(var(--white));
+    }
+  }
+
+  &__link:first-child {
+    @include u.breakpoint-down(mobile) {
+      margin-top: u.rem(13);
+    }
+  }
+
+  &__link:last-child {
+    border-radius: u.rem(28);
+    background-color: hsl(var(--yellow));
+
+    @include u.breakpoint(desktop) {
+      background-color: hsl(var(--white));
+      color: hsl(var(--dark-blue));
+    }
+  }
+}

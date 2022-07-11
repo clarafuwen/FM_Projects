@@ -1,0 +1,79 @@
+@use "../util/" as u;
+
+/*******************************************/
+/* styles for footer */
+/*******************************************/
+
+.footer {
+  padding-top: u.rem(64);
+
+  width: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: hsl(var(--sage));
+
+  @include u.breakpoint(desktop) {
+    padding-top: clamp(u.rem(30), 5vw, u.rem(100));
+  }
+
+  &__logo {
+    width: u.rem(170);
+    height: u.rem(33);
+    filter: invert(35%) sepia(70%) saturate(381%) hue-rotate(118deg)
+      brightness(50%) contrast(83%);
+  }
+
+  &__navigation,
+  &__social {
+    display: flex;
+  }
+
+  &__navigation {
+    margin-top: u.rem(40);
+    &--link {
+      color: hsl(var(--green));
+    }
+    gap: clamp(u.rem(30), 7vw + u.rem(30), u.rem(80));
+
+    @include u.breakpoint(desktop) {
+      padding-inline: 0;
+      gap: clamp(u.rem(25), 4vw, u.rem(80));
+    }
+
+    &--link:hover,
+    &--link:focus {
+      @include u.breakpoint(desktop) {
+        color: hsl(var(--white));
+        transition: 250ms ease-in;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: u.rem(88);
+    margin-bottom: 2rem;
+    gap: clamp(u.rem(15), 3vw + u.rem(15), u.rem(60));
+
+    @include u.breakpoint(desktop) {
+      gap: clamp(u.rem(15), 2vw, u.rem(60));
+    }
+
+    &--link:hover path,
+    &--link:focus path {
+      @include u.breakpoint(desktop) {
+        fill: hsl(var(--white));
+        transition: 250ms ease-in;
+      }
+    }
+  }
+
+  &__attribution {
+    font-size: 11px;
+    text-align: center;
+
+    color: hsl(228, 45%, 44%);
+  }
+}

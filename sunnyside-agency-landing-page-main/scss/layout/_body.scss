@@ -1,0 +1,18 @@
+@use "../util/" as u;
+
+/*******************************************/
+/* styles for body class */
+/*******************************************/
+body {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  min-width: u.rem(285);
+
+  @include u.breakpoint(desktop) {
+    width: clamp(u.rem(751), 95vw + u.rem(72), u.rem(2560));
+  }
+}

@@ -1,0 +1,73 @@
+@use "../util/" as u;
+
+/***************************************/
+/* header styles                       */
+/* *************************************/
+
+.header {
+  //maintain background image height
+  height: max(u.rem(538), 20vw);
+
+  width: 100%;
+
+  background-image: url("../images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  @include u.breakpoint(desktop) {
+    background-image: url("../images/desktop/image-header.jpg");
+    height: clamp(u.rem(600), 50vw + u.rem(80), u.rem(850));
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-top: u.rem(32);
+    padding-inline: u.rem(24);
+
+    @include u.breakpoint(desktop) {
+      margin-top: u.rem(34);
+      padding-inline-start: u.rem(40);
+      padding-inline-end: u.rem(48);
+    }
+  }
+
+  &__logo {
+    @include u.breakpoint(desktop) {
+      width: u.rem(170);
+      height: u.rem(33);
+    }
+  }
+  &__heading {
+    color: hsl(var(--white));
+    text-align: center;
+    margin-top: u.rem(88);
+
+    @include u.breakpoint(desktop) {
+      margin-top: u.rem(105);
+    }
+  }
+
+  &__arrow {
+    margin-top: u.rem(52);
+    @include u.breakpoint(desktop) {
+      margin-top: u.rem(96.5);
+    }
+  }
+
+  &__icon {
+    @include u.breakpoint(desktop) {
+      display: none;
+    }
+  }
+}

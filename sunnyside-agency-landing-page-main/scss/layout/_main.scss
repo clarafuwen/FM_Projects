@@ -1,0 +1,235 @@
+@use "../util/" as u;
+
+/***************************************/
+/* main styles                       */
+/* *************************************/
+.main {
+  width: 100%;
+
+  //mobile main uses flexbox
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  //desktop main switches to CSS Grid
+  @include u.breakpoint(desktop) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include u.breakpoint(desktop) {
+      text-align: left;
+      align-items: normal;
+      justify-content: center;
+    }
+
+    &--design,
+    &--photography,
+    &--egg,
+    &--glass {
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--egg {
+      background-image: url("../images/mobile/image-transform.jpg");
+      height: clamp(u.rem(200), 50vw + u.rem(124.5), u.rem(600));
+
+      @include u.breakpoint(desktop) {
+        height: clamp(u.rem(600), 41.67vw, u.rem(800));
+        background-image: url("../images/desktop/image-transform.jpg");
+      }
+    }
+
+    &--glass {
+      background-image: url("../images/mobile/image-stand-out.jpg");
+      height: clamp(u.rem(200), 50vw + u.rem(124.5), u.rem(600));
+
+      @include u.breakpoint(desktop) {
+        height: clamp(u.rem(600), 41.67vw, u.rem(800));
+
+        background-image: url("../images/desktop/image-stand-out.jpg");
+      }
+    }
+
+    //change the order of the 2nd grid item to the first in desktop version
+    &--transform {
+      @include u.breakpoint(desktop) {
+        order: -1;
+      }
+    }
+
+    &--title {
+      color: hsl(var(--dark-blue));
+      margin-top: u.rem(64);
+      padding-inline: u.rem(24);
+
+      @include u.breakpoint(desktop) {
+        padding-inline-start: u.rem(110);
+        padding-inline-end: u.rem(150);
+      }
+    }
+
+    &--content {
+      margin-top: u.rem(24);
+      padding-inline: u.rem(24);
+      color: hsl(var(--gray));
+
+      @include u.breakpoint(desktop) {
+        padding-inline-start: u.rem(110);
+        padding-inline-end: u.rem(165);
+        margin-top: u.rem(32);
+      }
+    }
+
+    &--link {
+      margin-top: u.rem(32);
+      margin-bottom: u.rem(64);
+      color: hsl(var(--dark-blue));
+
+      @include u.breakpoint(desktop) {
+        align-self: flex-start;
+        margin-inline-start: u.rem(110);
+        margin-top: u.rem(40);
+      }
+    }
+
+    &--title0 {
+      @include u.breakpoint(desktop) {
+        padding-inline-start: u.rem(165);
+        padding-inline-end: u.rem(175);
+      }
+    }
+
+    &--content0 {
+      @include u.breakpoint(desktop) {
+        padding-inline-start: u.rem(165);
+        padding-inline-end: u.rem(110);
+      }
+    }
+
+    &--design {
+      background-image: url("../images/mobile/image-graphic-design.jpg");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: u.rem(27);
+
+      @include u.breakpoint(desktop) {
+        background-image: url("../images/desktop/image-graphic-design.jpg");
+      }
+    }
+
+    &--photography {
+      background-image: url("../images/mobile/image-photography.jpg");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: u.rem(27);
+
+      @include u.breakpoint(desktop) {
+        background-image: url("../images/desktop/image-photography.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &--title2 {
+      margin-top: u.rem(398);
+      color: hsl(166, 40, 24, 100%);
+    }
+
+    &--content2 {
+      margin-bottom: u.rem(59);
+      padding-inline: u.rem(24);
+      color: hsl(166, 40, 24, 100%);
+      @include u.breakpoint(desktop) {
+        padding-inline: u.rem(190);
+        text-align: center;
+      }
+    }
+
+    &--testimonials {
+      padding-top: u.rem(64);
+      padding-inline: u.rem(24);
+      color: hsl(var(--light-gray));
+      padding-bottom: u.rem(86);
+
+      @include u.breakpoint(desktop) {
+        //as a grid item of the main, main__item--tesimonials taks 1 row and 2 cols
+        margin: u.rem(160) u.rem(165);
+        padding: 0;
+        grid-column: 1 / span 2;
+        align-items: flex-start;
+
+        //main__item--tesimonials itselfs divides into 4 grid items
+        //with heading on the first row, spanning 3 cols
+        //and the rest 3 cards on second row, each one col
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: u.rem(81);
+        column-gap: u.rem(30);
+      }
+    }
+
+    //the main__item--grid, as a grid item of the main, use CSS Grid to style its 4 children
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      @include u.breakpoint(desktop) {
+        grid-column: 1 / span 2;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        gap: 0;
+      }
+    }
+  }
+}
+
+//highlighter styles for "Learn More" links
+#link1,
+#link2 {
+  position: relative;
+}
+
+#link1::after,
+#link2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -7%;
+  width: 114%;
+  height: 50%;
+  border-radius: u.rem(28);
+  z-index: -1;
+}
+
+#link1::after {
+  background-color: hsla(var(--yellow), 0.25);
+}
+
+#link2::after {
+  background-color: hsla(var(--peach), 0.25);
+}
+
+#link1 {
+  @include u.breakpoint(desktop) {
+    margin-inline-start: u.rem(165);
+  }
+}

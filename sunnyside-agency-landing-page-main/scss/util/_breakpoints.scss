@@ -1,0 +1,18 @@
+/* mobile style goes up to 900px, then switch to desktop version */
+$breakpoints: (
+  "mobile": 56.25em,
+  "desktop": 56.3125em,
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+/* used specifically for mobile dropdown menu background styles */
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

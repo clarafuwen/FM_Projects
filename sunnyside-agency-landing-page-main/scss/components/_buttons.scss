@@ -1,0 +1,31 @@
+@use "../util/" as u;
+
+/*******************************************/
+/* the Contact button styles in navigation */
+/*******************************************/
+.button {
+  color: hsl(var(--dark-blue));
+
+  width: u.rem(140);
+  height: u.rem(56);
+  border-radius: u.rem(28);
+  background-color: hsl(var(--yellow));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include u.breakpoint(desktop) {
+    border-radius: u.rem(28);
+  }
+
+  &:hover,
+  &:focus-visible {
+    @include u.breakpoint(desktop) {
+      background-color: hsla(var(--white), 0.25);
+      color: hsl(var(--white));
+      transition: 250ms ease-in;
+    }
+  }
+}
