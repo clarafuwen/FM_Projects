@@ -294,7 +294,6 @@
   height: clamp(17.25rem, 50vw, 26rem);
   display: flex;
   overflow-x: auto;
-  overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
