@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop_screenshot](./screenshot.jpg)
+![desktop_screenshot](https://github.com/clarafuwen/FM_Projects/blob/342b7f882d267375a94cc6a45e893a6c7f938da1/manageLandingPage/design/screenshot_desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/clarafuwen/FM_Projects/tree/main/manageLandingPage)
+- Live Site URL: [netlify](https://dulcet-froyo-c09889.netlify.app/cd)
 
 ## My process
 
