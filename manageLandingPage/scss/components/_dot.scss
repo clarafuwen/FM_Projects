@@ -1,0 +1,19 @@
+/* ************************* */
+/*  slide indicators styles */
+/* ************************ */
+.dot {
+  height: clamp(0.4375rem, 1.8vw, 1rem);
+  width: clamp(0.4375rem, 1.8vw, 1rem);
+  border-radius: 50%;
+
+  border: 0.0625rem solid hsl(var(--primary-red));
+}
+
+.dot:hover,
+.dot:focus {
+  background-color: hsl(var(--primary-red));
+}
+
+.active {
+  background-color: hsl(var(--primary-red));
+}

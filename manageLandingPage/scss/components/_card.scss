@@ -1,0 +1,49 @@
+@use "../util/" as u;
+
+/* ********************************* */
+/*  user card styles for testimonial */
+/* ********************************* */
+.card {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: hsl(var(--primary-blue));
+
+  // outline: 1px solid blue;
+
+  &__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &__name,
+  &__content {
+    text-align: center;
+    background-color: hsl(var(--neutral-light-gray));
+  }
+
+  &__name {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: -2.25rem;
+    padding-top: 3.75rem;
+  }
+
+  &__content {
+    width: 100%;
+    padding-top: 1.1875rem;
+    padding-inline: 1.5rem;
+    padding-bottom: 2.625rem;
+
+    @include u.breakpoint(desktop) {
+      padding-inline: 2.5rem;
+    }
+  }
+}

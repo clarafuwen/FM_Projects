@@ -1,0 +1,139 @@
+@use "../util/" as u;
+/* ************* */
+/*  main styles */
+/* ************* */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+
+  /* ******************** */
+  /*  main__intro styles */
+  /* ****************** */
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 84.8vw;
+
+    @include u.breakpoint(desktop) {
+      width: 77.08vw;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+
+      // outline: 1px solid red;
+    }
+  }
+
+  &__graph {
+    object-fit: cover;
+    object-position: center center;
+    margin-top: 0.5rem;
+    order: -1;
+
+    @include u.breakpoint(desktop) {
+      order: initial;
+      min-width: 39vw;
+
+      // padding-inline-start: 5rem;
+    }
+  }
+
+  /* ****************** */
+  /*  main__des styles */
+  /* **************** */
+  &__des {
+    margin-top: 5.8125rem;
+
+    display: flex;
+    flex-direction: column;
+
+    @include u.breakpoint(desktop) {
+      margin-top: 8rem;
+      flex-direction: row;
+      width: 77.08vw;
+
+      justify-content: space-between;
+    }
+  }
+
+  /* ******************** */
+  /*  main__slider styles */
+  /* ******************** */
+  &__slider {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include u.breakpoint(desktop) {
+      margin-top: 9.125rem;
+      margin-bottom: 9rem;
+    }
+
+    &--heading {
+      color: hsl(var(--primary-blue));
+      margin-bottom: 3.8rem;
+    }
+
+    &--indicators {
+      margin-top: 2.125rem;
+      display: flex;
+      gap: 5px;
+
+      @include u.breakpoint(desktop) {
+        display: none;
+      }
+    }
+
+    &--btn {
+      margin-top: 2.9375rem;
+    }
+  }
+
+  /* ****************** */
+  /*  main__cta styles */
+  /* **************** */
+  &__cta {
+    width: 100vw;
+    margin-top: 2.625rem;
+    color: hsl(var(--neutral-white));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5.6875rem 1.9375rem;
+
+    @include u.breakpoint(desktop) {
+      flex-direction: row;
+      gap: min(31rem, 28vw + 2rem);
+      padding: 3.875rem clamp(2rem, 5vw + 5.8125rem, 30rem);
+      text-align: left;
+    }
+
+    &--btn {
+      background-color: hsl(var(--neutral-white));
+      color: hsl(var(--primary-red));
+
+      margin-top: 1.625rem;
+      @include u.breakpoint(desktop) {
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+
+    &--btn:hover,
+    &--btn:focus {
+      @include u.breakpoint(desktop) {
+        color: rgba(243, 96, 60, 0.5);
+        background-color: hsl(var(--neutral-white));
+      }
+    }
+  }
+}

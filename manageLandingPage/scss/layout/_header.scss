@@ -1,0 +1,86 @@
+@use "../util" as u;
+
+/* *************** */
+/*  header styles */
+/* ************* */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: clamp(2.8125rem, 11vw, 7rem);
+  margin-inline: clamp(1.5rem, 2vw + 1rem, 3rem);
+
+  position: relative;
+
+  // outline: 1px solid red;
+
+  @include u.breakpoint(desktop) {
+    margin-top: clamp(2.5rem, 4vw, 7rem);
+    width: 77.08vw;
+    margin-inline: auto;
+  }
+
+  &__logo {
+    width: 6.875rem;
+    height: 1.125rem;
+
+    @include u.breakpoint(desktop) {
+      width: 9.1875rem;
+      height: 1.5rem;
+      flex-shrink: 0;
+    }
+  }
+
+  &__icons {
+    z-index: 5;
+    @include u.breakpoint(desktop) {
+      display: none;
+    }
+  }
+
+  //hides nav when mobile menu icon not clicked
+  //display flex in desktop style
+  &__nav[data-visible="false"] {
+    display: none;
+    transition: 250ms ease-out;
+    @include u.breakpoint(desktop) {
+      display: flex;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+
+    min-height: 18.1875rem;
+
+    z-index: 5;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include u.breakpoint(desktop) {
+      width: clamp(40rem, 78vw, 60rem);
+      min-height: 1.1875rem;
+      position: static;
+      background-color: transparent;
+    }
+  }
+
+  &__btn {
+    display: none;
+    @include u.breakpoint(desktop) {
+      display: flex;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

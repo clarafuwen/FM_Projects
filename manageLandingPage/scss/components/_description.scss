@@ -1,0 +1,48 @@
+@use "../util/" as u;
+
+/* ***************************** */
+/*  description component styles */
+/* ***************************** */
+.description {
+  &__wrapper {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 86.5vw;
+
+    text-align: center;
+
+    @include u.breakpoint(desktop) {
+      width: 77.08vw;
+      align-self: unset;
+      text-align: left;
+      min-width: 30.9vw;
+    }
+  }
+
+  &__heading {
+    color: hsl(var(--primary-blue));
+    @include u.breakpoint(desktop) {
+    }
+  }
+
+  &__summary {
+    color: hsl(var(--primary-blue));
+    margin-top: 0.8125rem;
+
+    @include u.breakpoint(desktop) {
+      margin-top: 1.75rem;
+      padding-inline-end: 7rem;
+    }
+  }
+
+  &__content {
+    margin-top: 3.375rem;
+
+    @include u.breakpoint(desktop) {
+      margin: 0;
+    }
+  }
+}

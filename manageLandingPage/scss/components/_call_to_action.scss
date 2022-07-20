@@ -1,0 +1,38 @@
+@use "../util/" as u;
+
+/* ***************************************** */
+/*  call_to_action background pattern styles */
+/* ***************************************** */
+
+.call_to_action {
+  background-color: hsl(var(--primary-red));
+  position: relative;
+}
+
+.call_to_action::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 578px 578px;
+  background-position: left -30rem top 3rem;
+  opacity: 0.1;
+
+  @include u.breakpoint(desktop) {
+    background-position: left 10.5em top -3.5rem;
+  }
+}
+
+.call_to_action::after {
+  @include u.breakpoint(desktop) {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 578px 578px;
+    background-position: right -22.5rem bottom 4.5rem;
+    opacity: 0.07;
+  }
+}

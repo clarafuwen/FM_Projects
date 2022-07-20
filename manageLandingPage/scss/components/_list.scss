@@ -1,0 +1,68 @@
+@use "../util/" as u;
+
+/* *********************** */
+/*  list component styles */
+/* ********************** */
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  list-style: none;
+  padding-inline-start: 1rem;
+
+  gap: 2.9375rem;
+
+  // outline: 1px solid blue;
+
+  @include u.breakpoint(desktop) {
+    margin-top: -0.5rem;
+    gap: 2.5rem;
+    padding-inline-start: clamp(5rem, 8.88vw, 10rem);
+  }
+
+  &__item {
+    display: block;
+
+    &--title {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      color: hsl(var(--primary-blue));
+
+      border-top-left-radius: 2.4375rem;
+      border-bottom-left-radius: 2.4375rem;
+      background-color: hsl(var(--neutral-pale-red));
+      @include u.breakpoint(desktop) {
+        text-align: left;
+        background-color: transparent;
+      }
+    }
+
+    &--num {
+      display: inline-flex;
+      border-radius: 2.4375rem;
+      background-color: hsl(var(--primary-red));
+      color: hsl(var(--neutral-white));
+
+      height: 2.4375rem;
+      width: 4.1875rem;
+      justify-content: center;
+      align-items: center;
+
+      margin-inline-end: 1rem;
+
+      @include u.breakpoint(desktop) {
+        margin-inline-end: 1.5rem;
+      }
+    }
+
+    &--content {
+      margin-top: 0.5rem;
+      @include u.breakpoint(desktop) {
+        padding-inline-start: 5.5rem;
+        margin-top: 0.6rem;
+      }
+    }
+  }
+}

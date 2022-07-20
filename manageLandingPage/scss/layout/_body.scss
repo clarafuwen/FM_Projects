@@ -1,0 +1,48 @@
+@use "../util" as u;
+
+.body {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../images/bg-tablet-pattern.svg"),
+    url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -36vw left 17vw, top 13.2% left 65vw;
+
+  background-size: clamp(29.375rem, 58.4vw, 56.25rem)
+      clamp(29.375rem, 58.4vw, 56.25rem),
+    clamp(20.5rem, 41vw, 46rem), clamp(20.5rem, 41vw, 46rem);
+
+  min-width: 18.75rem;
+
+  font-family: var(--font-beVietnam);
+
+  position: relative;
+
+  @include u.breakpoint(desktop) {
+    background-position: top -9rem right -9.5rem, top 70rem left -32rem;
+    background-size: auto auto;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 0%, 0.1),
+    rgba(0, 0%, 0%, 0.9)
+  );
+  position: absolute;
+  inset: 0;
+  color: hsl(0, 0%, 0%);
+  display: none;
+
+  @include u.breakpoint(desktop) {
+    display: none;
+  }
+}
+
+.overlay-hidden {
+  display: none;
+}

@@ -1,0 +1,192 @@
+@use "../util/" as u;
+
+/* ************ */
+/*  typography */
+/************* */
+
+:root {
+  //font-family
+  --font-beVietnam: "Be Vietnam Pro", sans-serif;
+
+  //font sizes
+  --fs-xLarge: 3.5rem; //56px
+  --fs-large: 2.5rem; //40px
+  --fs-medium: 1.875rem; //30px
+  --fs-medium-2: 2rem; //32px
+  --fs-small: 1rem; //16px
+  --fs-xSmall: 0.9375rem; //15px
+  --fs-xxSmall: 0.875rem; //14px
+  --fs-xxxSmall: 0.8125rem; //13px
+
+  //letter-spacings
+  --letter-spacing-1: -0.0625rem; //-1px
+  --letter-spacing-2: -0.044375rem; //-.71px
+  --letter-spaving-3: -0.018125rem; //-.29px
+  --letter-spacing-4: -0.014375rem; //-.23px
+  --letter-spacing-5: -0.0125rem; //-0.2px
+  --letter-spacing-6: -0.03875rem; //-.62px
+  --letter-spacing-7: -0.04125rem; //-.66px
+
+  // font weights//
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+}
+
+h1 {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-medium);
+  line-height: 1.143;
+  letter-spacing: var(--letter-spacing-1);
+
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-large), 3.88vw, 6rem);
+    font-weight: var(--fw-medium);
+    line-height: 1.25;
+    letter-spacing: var(--letter-spacing-1);
+  }
+}
+
+h2 {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--letter-spacing-6);
+
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-large), 2.78vw, 4.5rem);
+    font-weight: var(--fw-medium);
+    line-height: 1.1;
+    letter-spacing: var(--letter-spacing-2);
+  }
+}
+
+h3 {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+  line-height: 1.4375;
+  letter-spacing: var(--letter-spacing-3);
+}
+
+.navigation__link {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+  line-height: 1.4375;
+  letter-spacing: var(--letter-spacing-3);
+
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-xxxSmall), 0.9vw, 4rem);
+    font-weight: var(--fw-medium);
+    line-height: 1.4375;
+    letter-spacing: 0;
+  }
+}
+
+.introduction__content {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-regular);
+  line-height: 1.75;
+  letter-spacing: 0;
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-small), 1.11vw, 3rem);
+    line-height: 1.625;
+  }
+}
+
+.btn {
+  font-size: var(--fs-xxxSmall);
+  font-weight: var(--fw-bold);
+  line-height: 1.46;
+  letter-spacing: 0;
+}
+
+.description__summary {
+  font-size: var(--fs-xxSmall);
+  font-weight: var(--fw-regular);
+  line-height: 2;
+  letter-spacing: 0;
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-small), 1.11vw, 2rem);
+    font-weight: var(--fw-regular);
+    line-height: 1.625;
+  }
+}
+.list__item--num,
+.list__item--title {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+  line-height: 1.4375;
+  letter-spacing: var(--letter-spacing-3);
+}
+
+.list__item--content {
+  font-size: var(--fs-xxSmall);
+  font-weight: var(--fw-regular);
+  line-height: 2;
+  letter-spacing: 0;
+  @include u.breakpoint(desktop) {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+    line-height: 1.625;
+  }
+}
+
+.main__slider--heading {
+  font-size: var(--fs-medium-2);
+  font-weight: var(--fw-bold);
+  line-height: 1.40625;
+  letter-spacing: var(--letter-spacing-7);
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-large), 2.78vw, 4rem);
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-7);
+  }
+}
+
+.card__name {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  line-height: 1.4375;
+  letter-spacing: var(--letter-spacing-3);
+}
+
+.card__content {
+  font-size: var(--fs-xxSmall);
+  font-weight: var(--fw-regular);
+  line-height: 1.857;
+  letter-spacing: var(--letter-spacing-3);
+
+  @include u.breakpoint(desktop) {
+    font-size: var(--fs-small);
+
+    line-height: 1.625;
+    letter-spacing: 0;
+  }
+}
+
+.main__cta--content {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-medium);
+  line-height: 1.25;
+  letter-spacing: var(--letter-spacing-1);
+
+  @include u.breakpoint(desktop) {
+    font-size: clamp(var(--fs-medium), 2.78vw, var(--fs-large));
+    font-weight: var(--fw-medium);
+    line-height: 1.1;
+    letter-spacing: var(--letter-spacing-2);
+  }
+}
+
+.navigation2__text {
+  font-size: var(--fs-xSmall);
+  font-weight: var(--fw-regular);
+  line-height: 1.375;
+  letter-spacing: var(--letter-spacing-4);
+}
+
+.footer__copyright {
+  font-size: var(--fs-xxxSmall);
+  font-weight: var(--fw-regular);
+  line-height: 1.46;
+  letter-spacing: var(--letter-spacing-5);
+}

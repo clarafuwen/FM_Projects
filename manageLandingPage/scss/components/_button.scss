@@ -1,0 +1,24 @@
+@use "../util/" as u;
+
+/* ************** */
+/*  button styles */
+/* ************** */
+.btn {
+  width: 8.5625rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.375rem;
+  background-color: hsl(var(--primary-red));
+  text-decoration: none;
+  color: hsl(var(--neutral-white));
+}
+
+.btn:hover,
+.btn:focus {
+  @include u.breakpoint(desktop) {
+    cursor: pointer;
+    background-color: hsla(var(--primary-red), 0.5);
+  }
+}

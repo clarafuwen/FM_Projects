@@ -1,0 +1,13 @@
+/* ****************************** */
+/*  breakpoint for virwport width */
+/* ****************************** */
+
+$breakpoints: (
+  "desktop": 62.5625em //1001px,
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
