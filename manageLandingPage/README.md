@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/clarafuwen/FM_Projects/tree/main/manageLandingPage)
-- Live Site URL: [netlify](https://dulcet-froyo-c09889.netlify.app/cd)
+- Live Site URL: [netlify](https://dulcet-froyo-c09889.netlify.app/)
 
 ## My process
 
