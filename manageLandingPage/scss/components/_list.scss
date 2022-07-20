@@ -59,6 +59,7 @@
 
     &--content {
       margin-top: 0.5rem;
+      color: hsla(var(--primary-blue), 0.5);
       @include u.breakpoint(desktop) {
         padding-inline-start: 5.5rem;
         margin-top: 0.6rem;

@@ -29,7 +29,7 @@
   }
 
   &__summary {
-    color: hsl(var(--primary-blue));
+    color: hsla(var(--primary-blue), 0.5);
     margin-top: 0.8125rem;
 
     @include u.breakpoint(desktop) {

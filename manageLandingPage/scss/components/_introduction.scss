@@ -27,7 +27,7 @@
 
   &__content {
     margin-top: 0.5625rem;
-    color: var(--primary-blue);
+    color: hsla(var(--primary-blue), 0.5);
     @include u.breakpoint(desktop) {
       margin-top: clamp(1rem, 3vw - 1.7rem, 10rem);
       padding-inline-end: clamp(1rem, 10vw + 4rem, 12rem);

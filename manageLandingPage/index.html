@@ -30,7 +30,7 @@
     <!-- header starts here -->
     <header class="header">
       <img src="/images/logo.svg" alt="header logo" class="header__logo" />
-      <div class="header__icons" aria-expanded="false">
+      <div class="header__icons" aria-expanded="false" role="navigation">
         <img
           src="/images/icon-hamburger.svg"
           aria-expanded="true"
@@ -127,6 +127,7 @@
       </section>
 
       <section class="main__slider">
+        <h2 class="sr-only">User testimonials</h2>
         <span class="main__slider--heading">What they’ve said</span>
         <div class="testimonials">
           <div class="testimonials__slide card" id="slide_1">
@@ -203,6 +204,7 @@
       </section>
 
       <section class="main__cta call_to_action">
+        <h2 class="sr-only">sign up with email</h2>
         <p class="main__cta--content">Simplify how your team works today.</p>
         <a href="#" class="btn main__cta--btn" style="z-index: 10"
           >Get Started</a
@@ -274,13 +276,13 @@
               pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
             />
 
-            <label
+            <input
               for="emailAddress"
               class="btn footer__btn"
               type="button"
               onclick="errorMessage()"
-              >Go
-            </label>
+              value="Go"
+            />
           </div>
           <!-- a placeholder to display the error message for email validation -->
           <span class="error"><em></em></span>

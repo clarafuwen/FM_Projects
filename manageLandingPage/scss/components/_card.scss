@@ -41,6 +41,7 @@
     padding-top: 1.1875rem;
     padding-inline: 1.5rem;
     padding-bottom: 2.625rem;
+    color: hsla(var(--primary-blue), 0.5);
 
     @include u.breakpoint(desktop) {
       padding-inline: 2.5rem;
