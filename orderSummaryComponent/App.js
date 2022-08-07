@@ -17,7 +17,7 @@ const link_changePlan = (
 
 const ratePlan_container = (
   <div className="ratePlan">
-    <img src="images/icon-music.svg" atl="music icon" />
+    <img src="images/icon-music.svg" alt="music icon" />
     {ratePlan}
     {link_changePlan}
   </div>
