@@ -17,7 +17,7 @@ const link_changePlan = (
 
 const ratePlan_container = (
   <div className="ratePlan">
-    <img src="images/icon-music.svg" />
+    <img src="images/icon-music.svg" atl="music icon" />
     {ratePlan}
     {link_changePlan}
   </div>
@@ -29,7 +29,11 @@ const btn_cancel = <button className="btn btn__cancel">Cancel Order</button>;
 
 const main = (
   <main className="margin_inline main">
-    <img className="main__hero" src="/images/illustration-hero.svg" />
+    <img
+      className="main__hero"
+      src="/images/illustration-hero.svg"
+      alt="hero"
+    />
     <h1 className="main__heading">Order Summary</h1>
     <p className="main__description">
       You can now listen to millions of songs, audiobooks, and podcasts on any
