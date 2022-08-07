@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  </head>
 
-</head>
+  <body>
+    <!-- React component inside this div. -->
+    <div id="orderSummaryComponent"></div>
 
-<body>
-    <main>
-        <div class="header">
-            <img alt='illustration-hero' src="images/illustration-hero.svg" />
-        </div>
-        <div class="content">
-            <h2>Order Summary</h2>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-            <div class='rate_info'>
-                <img src="images/icon-music.svg" alt="music" />
-                <div class="rate_plan">
-                    <p class="plan_type">Annual Plan<br></p>
-                    <p>$59.99/year</p>
-                </div>
-                <p><a href=''>Change</a></p>
-            </div>
-            <div class="button proceed"><a href=''>Proceed to Payment</a></div>
-            <div class="button cancel"><a href=''>Cancel Order</a></div>
-        </div>
-    </main>
-    <footer>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Clara Wen</a>.
-    </footer>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
 
-</body>
-
+    <!-- Load our React component. -->
+    <script type="text/babel" src="App.js"></script>
+  </body>
 </html>

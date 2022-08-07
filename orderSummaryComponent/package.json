@@ -1,6 +1,6 @@
 {
   "name": "ordersummarycomponent",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "frontedn mentor challenge -- order summary component",
   "main": "index.html",
   "scripts": {

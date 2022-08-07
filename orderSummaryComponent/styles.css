@@ -1,274 +1,308 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Red Hat Display', sans-serif;
+/* ***** */
+/* reset */
+/* ***** */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-:root {
-    --Pale-blue: hsl(225, 100%, 94%);
-    --Bright-blue: hsl(245, 75%, 52%);
-    --Very-pale-blue: hsl(225, 100%, 98%);
-    --Desaturated-blue: hsl(224, 23%, 55%);
-    --Dark-blue: hsl(223, 47%, 23%);
-    --Purple: hsl(245, 68%, 65%);
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
-    background-image: url('images/pattern-background-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-
-    /* border: 2px solid red; */
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-
-main {
-    height: 566px;
-    width: 328px;
-    background-color: #ffffff;
-    border-radius: 20px;
-
-    /* border: 1px solid blue; */
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-.header {
-    width: 328px;
-    border: none;
-
-    /* border: 1px solid black; */
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-.header img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-
-    /* border: 1px solid black; */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-.content {
-    height: 398px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    /* border: 1px solid black; */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
-.content h2 {
-    margin-top: 3vh;
-    font-weight: 900;
-    width: auto;
-    text-align: center;
-    background-color: #ffffff;
-    color: var(--Dark-blue);
-
-    /* border: 1px solid green; */
+/* visually hide screen read only items */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }
 
-.content p {
-    font-size: 16px;
-    width: 270px;
-    height: auto;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2vh;
-    color: var(--Desaturated-blue);
-    background-color: #ffffff;
+/* ****************** */
+/* custom properties */
+/* ****************** */
 
-    /* border: 1px solid blue; */
+/* colors */
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Purple: hsl(245, 68%, 65%);
 }
 
-.rate_info {
-    margin-top: 3vh;
-    margin-bottom: 2.5vh;
-    width: 278px;
-    height: 80px;
-    border-radius: 12px;
-    background-color: var(--Very-pale-blue);
+/* typography */
+:root {
+  /* font weights */
+  --fw-bold: 900;
+  --fw-medium: 700;
+  --fw-regular: 500;
 
-    display: flex;
-    align-items: center;
-
+  /* font size */
+  --fs-900: 1.5rem;
+  --fs-600: 1rem;
+  --fs--400: 0.45rem;
 }
 
-.rate_info img {
-    width: 50px;
-    height: 50px;
-    margin-left: 5%;
-    /* border: 1px solid red; */
+/* ************** */
+/* layout styles */
+/* ************** */
+body {
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--Pale-blue);
 }
 
-.rate_plan {
-    margin-left: 6%;
-    margin-right: 9%;
-    /* border: 1px solid green; */
+.main {
+  width: clamp(10rem, 87.6vw, 28.125rem);
+  background-color: #ffffff;
+  border-radius: 1rem;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.rate_plan .plan_type {
-    display: block;
-    width: auto;
-    font-weight: 900;
-    color: var(--Dark-blue);
-    /* border: 1px solid red; */
-
+.main__hero {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
 }
 
-.rate_info p {
-    display: block;
-    width: auto;
-    font-size: .8em;
-    background-color: transparent;
-    margin: 0 auto;
+.main .main__heading {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  color: var(--Dark-blue);
+  letter-spacing: -0.05rem;
+  text-align: center;
 
-    /* border: 1px solid blue; */
+  padding-block-start: 1.5rem;
 }
 
-.rate_info a:link,
-.rate_info a:visited {
-    color: var(--Bright-blue);
+.main .main__description {
+  margin-top: 1rem;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  color: var(--Desaturated-blue);
+  line-height: 1.5;
+  letter-spacing: -0.01rem;
+  text-align: center;
+  padding-inline: 2rem;
 }
 
-.rate_info a:active,
-.rate_info a:hover {
-    color: var(--Purple);
-    text-decoration: none;
+/* ****************** */
+/* components styles */
+/* ***************** */
+
+.ratePlan {
+  width: 85.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Very-pale-blue);
+
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  color: var(--Bright-blue);
 }
 
-.button {
-    background-color: var(--Bright-blue);
-    height: 50px;
-    width: 278px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    border: none;
-    box-shadow: 1px 10px 20px hsl(246, 70%, 83%);
-    /* border: 1px solid red; */
+.ratePlan .ratePlan__name {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+  color: var(--Dark-blue);
+  line-height: 1.5;
+  letter-spacing: -0.08rem;
+  text-align: left;
+  /* padding-inline: 2rem; */
 }
 
-.button:active,
-.button:hover {
-    cursor: pointer;
+.ratePlan .ratePlan__rate {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  color: var(--Desaturated-blue);
+  line-height: 1.5;
+  letter-spacing: -0.05rem;
+  text-align: left;
 }
 
-.proceed {
-    color: var(--Very-pale-blue);
+.ratePlan__link:hover,
+.ratePlan__link:focus {
+  color: var(--Purple);
 }
 
+/* component styles */
+.btn {
+  width: 85.5%;
+  background-color: var(--Bright-blue);
+  border: none;
+  border-radius: 0.5rem;
 
-.proceed:active,
-.proceed:hover {
-    background-color: var(--Purple);
+  color: #ffffff;
+  text-align: center;
+  padding-block: 0.8rem;
+  line-height: 1.5;
+  font-size: var(--fs--600);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.01rem;
+
+  cursor: pointer;
 }
 
-
-.proceed a:link,
-.proceed a:visited {
-    color: var(--Very-pale-blue);
-    text-decoration: none;
+.btn__proceed {
+  box-shadow: 1px 10px 20px hsl(246, 70%, 83%);
 }
 
-.proceed a:active,
-.proceed a:hover {
-    text-decoration: none;
-    background-color: var(--Purple);
-    color: var(--Very-pale-blue);
-
+.btn__proceed:hover,
+.btn__proceed:focus-visible {
+  background-color: var(--Purple);
 }
 
-.cancel {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-
+.btn__cancel {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  color: var(--Desaturated-blue);
+  margin-bottom: 1rem;
 }
 
-.cancel:active,
-.cancel:hover {
-    cursor: pointer;
+.btn__cancel:hover,
+.btn__cancel:focus-visible {
+  color: var(--Dark-blue);
 }
 
-.cancel a:link,
-.cancel a:visited {
-    color: var(--Desaturated-blue);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-}
+@media only screen and (min-width: 1400px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
 
-.cancel a:active,
-.cancel a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--Dark-blue);
-}
+  .main {
+    width: clamp(28.125rem, 31.23vw, 40rem);
+  }
 
-footer {
-    font-size: 11px;
-    text-align: center;
-}
+  .main .main__heading {
+    letter-spacing: 0.13rem;
+    margin-top: 1.375rem;
+    font-size: 1.6rem;
+  }
 
-footer a {
-    color: hsl(228, 45%, 44%);
-}
+  .main .main__description {
+    margin-top: 1em;
+    padding-inline: 3rem;
+  }
 
-@media only screen and (min-width: 767px) {
-    body {
-        background-image: url('images/pattern-background-desktop.svg');
+  .ratePlan {
+    width: 77.8%;
+    justify-content: unset;
 
-    }
+    margin-top: 1.75rem;
+    margin-bottom: 2.5rem;
+    padding-block: 1.5rem;
+    padding-inline: 1.385rem;
+  }
 
-    main {
-        width: 405px;
-        height: 628px;
-    }
+  .ratePlan__wrapper {
+    padding-inline-start: 1.5rem;
+  }
 
-    .header {
-        width: 405px;
-    }
+  .ratePlan .ratePlan__name {
+    letter-spacing: 0;
+  }
 
-    .content {
-        height: 420px;
-    }
+  .ratePlan__link {
+    padding-inline-start: 5rem;
+    letter-spacing: 0.01rem;
+  }
 
-    .content p {
-        width: 320px;
-    }
+  /* component styles */
+  .btn {
+    width: 77.8%;
+  }
 
-    .rate_info {
-        height: 88px;
-        width: 320px;
-    }
-
-    .rate_plan p {
-        font-size: 16px;
-
-    }
-
-    .rate_info p {
-        display: block;
-        width: auto;
-        background-color: transparent;
-        margin: 0 auto;
-    }
-
-    .button {
-        height: 45px;
-        width: 320px;
-    }
+  .btn__cancel {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
